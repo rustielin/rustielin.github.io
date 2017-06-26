@@ -1,0 +1,23 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+#relative_permalinks: true
+
+# Setup
+title:               Rustie Lin
+tagline:             'UC Berkeley CS + Stats'
+url:                 http://rustielin.github.io
+baseurl:             ''
+paginate:            2
+
+# About/contact
+author:
+  name:              Rustie Lin
+  email:             rustielin@berkeley.edu
+
+# Custom vars
+version:             1.0.0
+
+# Plugins
+plugins: [jekyll-paginate]
