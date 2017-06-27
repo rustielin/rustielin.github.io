@@ -9,7 +9,8 @@ title:               Rustie Lin
 tagline:             'UC Berkeley CS + Stats'
 url:                 http://rustielin.github.io
 baseurl:             ''
-paginate:            2
+paginate:            1
+paginate_path:       "/blog/page:num/"
 
 # About/contact
 author:
