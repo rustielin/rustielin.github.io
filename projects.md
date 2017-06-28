@@ -28,7 +28,7 @@ title: Projects
 * Submission for Outside Hacks IV
 * Android app that helps concert goers (Outside Lands 2016) coordinate meeting times and locations with their friends
 * Uses vibration to tell the user the approximate distance they are from a friend
-* Built with **Java**, **XML**, **Firebase**, **Google Maps**, and various Android motion and vibration controls
+* Built with **Android**, **Java**, **XML**, **Firebase**, **Google Maps**, and various Android motion and vibration controls
 
 ### Slit (PC, MacOS, Android, iOS)
 * Personal project currently undergoing development. Hoping to have this on the Google Play Store eventually
@@ -51,3 +51,33 @@ title: Projects
 * Offers a high level overview and also technical details of Bitcoin, consensus algorithms, and cryptography fundamentals
 * Based on Blockchain at Berkeley's Spring 2017 "Introduction to Cryptocurrencies and Blockchain" course
 * Written using **LaTeX** typsesetting system
+
+### Velocity (Android)
+* Submission for Los Altos Hacks 2016
+* Simple and elegant to-do list as Android lock screen replacement
+* Features randomized wallpapers and inspirational quotes 
+* Based on the Momentum Google Chrome extension (Momentum / mass of a PC = Velocity haha...)
+* First time writing an Android application
+* Built with **Android**, **Java**, **XML**
+
+### Music Maker (Web)
+* Sumission for Hack Jam Fall 2016
+* Reads .WAV music files and interpolates the root chords of the song
+* Did not have enough time to implement beat analysis, but instead sampled the sound in set time intervals
+* First time writing a web app using Django
+* Built with **Django**, **Python**, **HTML**
+
+### Team Manager (Android, iOS)
+* A simple demo for React, React Native, and React Redux
+* Mobile application that keeps track of team members and their contact information
+* Members can either be admins (who can remove other members), or regular memers (who can't remove others)
+* Features List, Add, and Edit Team Member screens, which talk to each other via reducers to alter the app's local state 
+* First time writing a mobile app using React Native and React Redux
+* Built with **JavaScript**, **ReactJS**, **React Native**, **React Redux**
+
+### Firebase People Demo (Android)
+* A simple demo for Firebase and Firebase UI in Android
+* Android app that keeps track of a list of people, synchronized with a Firebase back-end
+* First time using Firebase UI, namely RecyclerViews, in conjunction with other aspects of the material design scheme
+* Built with **Android**, **Java**, **XML**, **Firebase**
+
