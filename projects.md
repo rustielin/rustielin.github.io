@@ -15,6 +15,7 @@ title: Projects
 * Used OpenCV computer vision library to create an outline of the hand, find its position, and count the number of fingers 
 * Hand position and number of fingers can be mapped to various actions such as mouse position and left and right clicking
 * We also built a simple rock, paper, scissors game to demo our app
+* Devpost link [here](https://devpost.com/software/manouse-webcam-mouse)
 * Built with **Python**, **OpenCV**, and **win32api**
 
 ### Tutor Chat (Web)
@@ -22,12 +23,14 @@ title: Projects
 * Web app that lets busy students collaborate, ask questions, and watch live-streamed lecture remotely in real time
 * Uses a queue system to pair students with available course staff
 * Public and private chats are conducted through Firebase
+* Devpost link [here](https://devpost.com/software/tutor-chat)
 * Built with **HTML**, **CSS**, **AngularJS**, and **Firebase** 
 
 ### Hello from the Outside (Android)
 * Submission for Outside Hacks IV
 * Android app that helps concert goers (Outside Lands 2016) coordinate meeting times and locations with their friends
 * Uses vibration to tell the user the approximate distance they are from a friend
+* Hackathon was hosted at Weebly headquarters... so check out our Weebly website [here](http://hello-fromtheoutside.weebly.com/)
 * Built with **Android**, **Java**, **XML**, **Firebase**, **Google Maps**, and various Android motion and vibration controls
 
 ### Slit (PC, MacOS, Android, iOS)
@@ -50,6 +53,7 @@ title: Projects
 * A meticulous set of open source notes covering various high-demand topics in the blockchain and cryptocurrency space, including Bitcoin, Ethereum, the Lightning Network, and the InterPlanetary File System
 * Offers a high level overview and also technical details of Bitcoin, consensus algorithms, and cryptography fundamentals
 * Based on Blockchain at Berkeley's Spring 2017 "Introduction to Cryptocurrencies and Blockchain" course
+* GitHub link [here](https://github.com/rustielin/Blockchain-Notes), or check our the related blog post [here]({% post_url 2017-6-27-blockchain_textbook %})
 * Written using **LaTeX** typsesetting system
 
 ### Velocity (Android)
@@ -80,4 +84,47 @@ title: Projects
 * Android app that keeps track of a list of people, synchronized with a Firebase back-end
 * First time using Firebase UI, namely RecyclerViews, in conjunction with other aspects of the material design scheme
 * Built with **Android**, **Java**, **XML**, **Firebase**
+
+### Hack Jam Linux (Linux)
+* Submission for Hack Jam Fall 2015
+* An extremely lightweight yet friendly custom Linux distribution (based on Arch) intended to breathe new life into old, slow, refurbished computers
+* Installed a friendly Windows-like desktop environment (LXDE), and also web, educational, image editing software, etc
+* Built with completely open source software, and with full access to the Arch User Repository
+* Runs smoothly in a virtual machine with only 64 MB RAM
+* Built with **Arch Linux**, **Architect**, **Arch User Repository**, and various command line tweaks
+
+### Meme Vision (Android)
+* High School computer science class project
+* A simple Android app that draws memes over detected faces through both rear and front-facing cameras 
+* First time using OpenCV for Android
+* Built with **Android**, **Java**, **XML**, **OpenCV**
+
+### Bear Hacks CVision (PC)
+* Winner of HKN Bear Hacks Spring 2016
+* First time using OpenCV, written following a workshop and presentation on computer vision research at UC Berkeley
+* A simple Python script using OpenCV that swaps detected faces
+* Also optionally draws the Cal Hacks mascot DDoSki over detected faces
+* Built with **Python**, **OpenCV**
+
+### Center for Empowering Refugees and Immigrants 
+* Submission for Berkeley Builds 2017 Designathon, in collaboration with the Center for Empowering Refugees and Immigrants 
+* Creative and intuitive dual screen website that aims to bridge the cultural gap between grandparents and their grandchildren as they use the 
+website together
+* Asks carefully worded questions to both the grandparent and grandchild to encourage meaningful conversation
+* Grandparent and grandchild create profiles (Name, date and place of birth, etc.) at the start, and the linearly designed
+website progresses like a storybook
+* Interactive map screen traces the distance traveled by their families
+* Built with **AngularJS**, **AngularJS Material**, **HTML**, **CSS**
+
+### Smartphone Mouse 
+* Ongoing personal project 
+* Use your smartphone as you would a regular mouse (place phone on a cloth, and slide it on a table if phone case is 
+not already slidey)
+* Features Android app with on screen buttons for left, right, and middle click, and an area for scroll
+* Android app client, and Python server which runs calculations on phone acceleration data and has mouse control in the local device
+* Sends a custom byte stream via TCP with Android accelerometer data, as well as bits for mouse click and scroll
+* Currently designing an algorithm to translate linear accelerometer data to smooth mouse movements (accelerometer drift makes 
+mouse movement jittery at times)
+* Building with **Android**, **Java**, **XML**, **Python**, **Python**, **win32api**
+
 
