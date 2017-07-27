@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Mastering Bitcoin
-headline: ff
+headline: Leafcutter ants operate in a decentralized colony 'superorganism'. They have a queen to produce offspring, but do not 
+          have a central authority to pass instructions to other ants. In a similar way, the Bitcoin network was engineered to
+          be decentralized.
 ---
 
 <p class="message">
