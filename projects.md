@@ -18,6 +18,15 @@ title: Projects
 * Devpost link [here](https://devpost.com/software/manouse-webcam-mouse)
 * Built with **Python**, **OpenCV**, and **win32api**
 
+### 2Burgers (Android, Django Server)
+* Submission for Hack Into It 2017
+* Android application that tracks daily, weekly, and lifetime purchases
+* Designed to provide insight on opportunity cost: a list of practical items that sum to the same total as what the user bought
+* Aggregate user statistics and user personalization data handled with Firebase
+* Datasets from data.world
+* Django RESTful server that runs K sum problem on user query
+* Built with **Django**, **Firebase**, **Android**
+
 ### Tutor Chat (Web)
 * Submission for HackUCI 2017
 * Web app that lets busy students collaborate, ask questions, and watch live-streamed lecture remotely in real time
