@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Blockchain Education
-headline: Blockchain Lecture Reflections
+headline: 
+I recently gave my second blockchain lecture -- this time on alternative consensus mechanisms -- and also an introduction to enterprise blockchain workshop for a campus entrepreneurship fraternity.
 ---
 
 I recently gave my second blockchain lecture -- this time on alternative consensus mechanisms -- and also an introduction to enterprise blockchain workshop for a campus entrepreneurship fraternity. Reception of both talks were positive, giving me encouragement that I am improving my communication style as an educator.
