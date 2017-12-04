@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web Scraping with Bash
-headline: Using standard Bash tools in UNIX to web scrape data sets for analysis in R: an alternative to using packages such as *rvest*.
+headline: Using standard Bash tools in UNIX to web scrape data sets for analysis in R, an alternative to using packages such as rvest.
 ---
 
 ## Introduction
