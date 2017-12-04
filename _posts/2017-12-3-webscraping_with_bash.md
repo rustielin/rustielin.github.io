@@ -14,7 +14,7 @@ The reason why we might want to use Bash tools for web scraping instead of R too
 
 For this demo, we will be using standard Bash tools in conjunction with the web tools *cURL* and *lynx*. I will go over what each of these commands does in the next sections, but for now, you can download them using your favorite package manager. I personally use the package manager *apt*, so I run the following commands:
 
-```{r, engine = 'bash', eval = FALSE}
+``` r
 # installing curl and lynx
 apt-get install curl lynx
 ```
@@ -25,7 +25,7 @@ Software installation might require super-user access on your system, in which c
 
 From the man pages:
 
-```{r, engine = 'bash', eval = FALSE}
+``` 
 # man curl
 curl is a tool to transfer data from or to a server, using one of the supported pro‐
 tocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS,  POP3,
@@ -38,7 +38,7 @@ Basically what this means is that it lets us download files and web pages in our
 
 Let's try it out. To download the page http://rustielin.me, simply execute the following command.
 
-```{r, engine = 'bash'}
+``` bash
 # save to a file
 curl http://rustielin.me > data/rustie.html
 
@@ -46,6 +46,7 @@ curl http://rustielin.me > data/rustie.html
 head data/rustie.html
 
 ```
+
 ## *lynx*: text-based web browser
 
 ![pic]({{ "/res/img/2017-12-3-lynx.png" | absolute_url }})
@@ -54,7 +55,7 @@ head data/rustie.html
 
 I mean the heading says it all. *lynx* eats html files and processes them in human-readable formats, and this will come in really handy when we actually start web scraping. *lynx* is pretty powerful, and you can actually use it to view and interact with web pages (seen in the image above), but we'll only be using it to get a dump of the web page we're interested in. To get an idea of what we'll be using *lynx* for, check out the following commands, where we make our previously downloaded html file a bit more readable.
 
-```{r, engine = 'bash'}
+``` bash
 # dump lynx output to a file 
 lynx -dump data/rustie.html > data/rustie.txt
 
@@ -70,7 +71,7 @@ Alright so now we know how to download a web page using *cURL*, and how to use *
 
 (We are using a sample web page here, but imagine using the power of Bash scrpting to recursively download all the CSV (or any other format) files from a given domain.)
 
-```{r, engine = 'bash'}
+``` bash
 # download the web page with cURL
 curl -s https://support.spatialkey.com/spatialkey-sample-csv-data/ -o data/sample.html
 
@@ -80,7 +81,7 @@ lynx -dump data/sample.html > data/sample.txt
 
 We only really care about the CSV files hosted on this page, and not the rest of the page. We can extract the links to the CSV files using the *grep* string search command, which has support for Regular Expressions!
 
-``` {r, engine = 'bash'}
+``` bash
 # get the urls
 cat data/sample.txt | grep -e '\.csv$'
 
@@ -88,7 +89,7 @@ cat data/sample.txt | grep -e '\.csv$'
 
 Nice, we got the URLs. But they have numbers in front of those. We can clean our URLs up using the *cut* command, whose functionality is self explanatory. We're interested in each line of the previous output, starting from the 7th character onwards.
 
-``` {r, engine = 'bash'}
+``` bash
 # same command as before, piped into cut, and saved to a file
 cat data/sample.txt | grep -e '\.csv$' | cut -c 7- > data/urls.txt
 
@@ -97,7 +98,7 @@ cat data/urls.txt
 ```
 Awesome. Nowe we have to get the CSVs from these URLs somehow. *cURL* lets us download these files. We'll only be downloading from the first URL for simplicity.
 
-``` {r, engine = 'bash'}
+``` bash
 # get the first url and download with crl
 head -n 1 data/urls.txt | xargs curl -so data/realestate.csv 
 
@@ -109,7 +110,7 @@ For reference, here is the description of the dataset we just downloaded. It's a
 
 Now we have a workable CSV! Time to import into R for some fun. We'll graph this with ggplot.
 
-``` {r}
+``` r
 library(ggplot2)
 
 # importing the CSV to show that we actually got a valid CSV
@@ -120,17 +121,19 @@ colnames(dat)
 
 # a sample plot
 ggplot(dat, aes(x = sq__ft, y  = price)) + 
-  ggtitle("Sacramento Real Estate Price vs Square Feet") + geom_point() 
-
-
+  ggtitle("Sacramento Real Estate Price vs Square Feet") 
+  + geom_point() 
 ```
+
+![pic]({{ "/res/img/2017-12-3-plot.png" | absolute_url }})
+
 
 ## Remarks
 
 I used *lynx* in this demo because it's an easy way to visualize web pages. It might not be standard in some software repositories, and may be hard to get one's hands on. Instead of using *lynx*, one could just use *grep* and *sed* to get CSV files. This method requiries a bit more mastery of Regular Expressions, but it's still doable. *grep* and *sed* are much more standard than *lynx*, and are preintalled on most modern UNIX and GNU/Linux based operating sytetms.
 
 
-``` {r, engine = 'bash'}
+``` bash
 # get the urls
 cat data/sample.html | grep -oe 'http.*\.csv"' | sed 's/\"$//g'
 
