@@ -9,6 +9,15 @@ title: Projects
   
 </p>
 
+### Berkeley Mobile (Android, iOS)
+* Official UC Berkeley mobile app, [Android](https://play.google.com/store/apps/details?id=com.asuc.asucmobile&hl=en) and [iOS](https://itunes.apple.com/us/app/berkeley-mobile/id912243518?mt=8)
+* Leading Android team sprints in fast-paced and highly collaborative Agile environment
+* 12,000 downloads and 5,000 unique monthly users
+* Implemented material design splash screen with custom RecyclerView adapters and controllers for updating dining hall and cafe hours, menus, user preferences, and nutritions
+* Leveraging tools such as okhttp, gson, and Retrofit for interfacing with our RESTful backend
+* Network response caching for optimal user experience
+* Modularized and refactored data adapters and controllers on existing codebase, minimizing redundant code and speeding up development time by 2x
+
 ### Manouse (PC)
 * Submission for Cal Hacks 4.0
 * PC application that uses computer vision technology to map hand gestures to mouse control
