@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python Security Script Analysis
-headline: Analysis
+headline: Analysis of python wrapper script of popular security tools for UNIX systems
 ---
 
 **Authors: Rustie Lin & Nadir Akhtar**
