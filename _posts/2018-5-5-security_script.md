@@ -131,5 +131,17 @@ def analyze_url(url, options, logfile):
 
 On the other hand, the purpose of `execute_command` is to interpret and execute some command, its flags, and optionally appending to a specified logfile. It returns the resulting value of computation (Success or Failure), along with any `stdout` or `stderr` information. It leverages the existing `subprocess` module, which interprets the commands and returns a process. (The `stdout` and `stderr` are also retrievable from this, though as bytestrings. These are converted immediately after.) In the event of an OS or Execution error, these errors are logged to the the logfile. This method is at its core a wrapper for the `subprocess.Popen` method.
 
+Also notable is the definition of popular ports at the beginning of the file, as their proper configuration is of utmost importance in correct execution. These are well known port numbers, and are specified here:
 
+```python
+ALLPORTS = [(22, 'ssh'), (25, 'smtp'), (80, 'http'), (443, 'https'),
+            (465, 'smtps'), (993, 'imaps'), (995, 'pop3s'),
+            (8080, 'http-proxy')]
+SSL_PORTS = [25, 443, 465, 993, 995]
+```
+
+
+In summary, this post demonstrates the simplicity, modularity, and legibility of wrapper functions, along with their ability to speed up workflow by several orders simply with a few lines of code. With this wrapper acting as an intermediary between the user and several different types of tools, the user no longer needs to understand each tool individually. 
+
+Instead, by understanding the wrapper and its API, they have access to all desired functionality under the hood with ease. In addition, this python file makes it easier to communicate with peers, as there is a common language with which to discuss and debug any possible errors or issues. Lastly, by creating a utility like this, it allows less experienced developers or security engineers to get their hands on these more complicated tools by lowering the learning curve, as Java did for enterprise developers by abstracting away several machine-specific concepts necessary in C. By doing so, one has the option to quickly prototype and build with the abstractions provided by this software and dig deeper into the underlying tools later as they so choose, especially if they want to get into the nitty gritty to better understand how to make their code both more powerful and more efficient.
 
