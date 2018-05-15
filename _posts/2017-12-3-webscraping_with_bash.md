@@ -6,7 +6,7 @@ headline: Using standard Bash tools in UNIX to web scrape data sets for analysis
 
 ## Introduction
 
-In my previous post, titled *UNIX and Bash Fundamentals*, I went over how to pair both UNIX and Bash tools with R to expand one's toolbox to become a more flexible data analyst. In that post, we mainly went over how to run data preprocessing locally, on already pre-downloaded files. This post will continue with the knowledge we learned in the previous post, and extend our operability to finessing online data. In other words, we will be learning how to web scrape with Bash tools, and how to feed this data into R for more powerful data processing. 
+In my previous post, titled *UNIX and Bash Fundamentals*, I went over how to pair both UNIX and Bash tools with R to expand one's toolbox to become a more flexible data analyst. In that post, we mainly went over how to run data preprocessing locally, on already pre-downloaded files. This post will continue with the knowledge we learned in the previous post, and extend our operability to finessing online data. In other words, we will be learning how to web scrape with Bash tools, and how to feed this data into R for more powerful data processing.
 
 The reason why we might want to use Bash tools for web scraping instead of R tools such as *rvest* is because Bash is much more prevalent that full installs of R (and R Studio). While every computer might not have R and R Studio installed, they probably have access to a Bash shell, or at least a Bash emulator. It is also important to understand proper data flow between Bash commands, especially since they are the building blocks to much of the advanced functionality that R and R libraries for web scraping are built off of.
 
@@ -25,7 +25,7 @@ Software installation might require super-user access on your system, in which c
 
 From the man pages:
 
-``` 
+```
 # man curl
 curl is a tool to transfer data from or to a server, using one of the supported pro‐
 tocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS,  POP3,
@@ -34,7 +34,7 @@ is designed to work without user interaction.
 
 ```
 
-Basically what this means is that it lets us download files and web pages in our case. 
+Basically what this means is that it lets us download files and web pages in our case.
 
 Let's try it out. To download the page http://rustielin.me, simply execute the following command.
 
@@ -56,7 +56,7 @@ head data/rustie.html
 I mean the heading says it all. *lynx* eats html files and processes them in human-readable formats, and this will come in really handy when we actually start web scraping. *lynx* is pretty powerful, and you can actually use it to view and interact with web pages (seen in the image above), but we'll only be using it to get a dump of the web page we're interested in. To get an idea of what we'll be using *lynx* for, check out the following commands, where we make our previously downloaded html file a bit more readable.
 
 ``` bash
-# dump lynx output to a file 
+# dump lynx output to a file
 lynx -dump data/rustie.html > data/rustie.txt
 
 # see what's in the txt
@@ -100,7 +100,7 @@ Awesome. Nowe we have to get the CSVs from these URLs somehow. *cURL* lets us do
 
 ``` bash
 # get the first url and download with crl
-head -n 1 data/urls.txt | xargs curl -so data/realestate.csv 
+head -n 1 data/urls.txt | xargs curl -so data/realestate.csv
 
 ```
 
@@ -120,9 +120,9 @@ dat <- read.csv("data/realestate.csv")
 colnames(dat)
 
 # a sample plot
-ggplot(dat, aes(x = sq__ft, y  = price)) + 
-  ggtitle("Sacramento Real Estate Price vs Square Feet") 
-  + geom_point() 
+ggplot(dat, aes(x = sq__ft, y  = price)) +
+  ggtitle("Sacramento Real Estate Price vs Square Feet")
+  + geom_point()
 ```
 
 ![pic]({{ "/res/img/2017-12-3-plot.png" | absolute_url }})
@@ -149,13 +149,6 @@ Hopefully this post has inspired you the reader to play around with Bash tools y
 
 * https://support.spatialkey.com/spatialkey-sample-csv-data/
 
-* My previous post titled [*UNIX and Bash Fundamentals*](https://rustielin.github.io/2017/11/02/unix/) 
+* My previous post titled [*UNIX and Bash Fundamentals*]({% post_url 2017-11-2-unix %}) 
 
 * Lecture material from Stat133
-
-
-
-
-
-
-
