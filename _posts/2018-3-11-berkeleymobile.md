@@ -10,10 +10,10 @@ Berkeley Mobile 8.1 is now available on the Google Play Store <a href="https://p
 
 One of the biggest problems we face in Berkeley Mobile, or I guess any long-term software project run by the ASUC, is that students come and go. Old members graduate or get too busy, and new members are brought on-board semesterly. Because of this, you can imagine that the codebase gets pretty messy.
 
-When I first joined in Fall 2017, I was shocked that there was no documentation for Berkeley Mobile, all that existed was a tiny README that had instructions on how to run a single JUnit test. Due to this lack of coordination among previous developers, much gets lost in between ideation and the actual product that is pushed out. My first couple weeks on the team, I took it upon myself to completely read through the codebase, and understand Berkeley Mobile Android's architecture and general dataflow. 
+When I first joined in Fall 2017, I was shocked that there was no documentation for Berkeley Mobile, all that existed was a tiny README that had instructions on how to run a single JUnit test. Due to this lack of coordination among previous developers, much gets lost in between ideation and the actual product that is pushed out. My first couple weeks on the team, I took it upon myself to completely read through the codebase, and understand Berkeley Mobile Android's architecture and general dataflow.
 
 <p class="message">
-Being a seasoned software developer, I advocate for expressing more with less code, and in general being more effective with everyone's time. 
+Being a seasoned software developer, I advocate for expressing more with less code, and in general being more effective with everyone's time.
 </p>
 
 The last sprint I led, I worked on cleaning up how our mobile clients fetch data from our back end. Teams from previous semesters/years before I joined had been fetching data in different ways, and only touched files in which their features lived. Lack of coordination led to half our data being fetched with pure `okhttp`, and half of it with `retrofit`. Both ways had these HUGE hundred-line methods in their data controllers that parsed JSON. Seemed like a huge waste of code, screen real estate, and time.

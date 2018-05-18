@@ -9,7 +9,7 @@ title:               Rustie Lin
 tagline:             UC Berkeley CS, Android, Blockchain
 url:                 http://rustielin.github.io
 baseurl:             ''
-paginate:            7
+paginate:            20
 paginate_path:       "/blog/page:num/"
 
 # About/contact
@@ -19,6 +19,13 @@ github:              https://github.com/rustielin
 
 # Custom vars
 version:             1.0.0
+categorylist:          [blockchain]
+collections:
+    notes:
+        collections_dir: notes
+        output: true
+        permalink: /notes/:name
+
 
 # Plugins
 plugins: [jekyll-paginate]

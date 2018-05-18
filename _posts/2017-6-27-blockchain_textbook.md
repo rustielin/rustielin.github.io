@@ -3,29 +3,29 @@ layout: post
 title: Blockchain Textbook
 headline: I've recently been working on a series of personal notes on blockchain technologies and cryptocurrencies as a passion project,
           and also to brush up on my understanding. Last Spring, I was a student in Blockchain at Berkeley's "Introduction to Cryptocurrencies
-          and Blockchain" DeCal (student run class). Going in, I knew at a very high level what blockchains were and how they functioned, but 
-          to me it just sounded all hype and no substance (I had not read any technical papers or articles back then). Having taken the class 
+          and Blockchain" DeCal (student run class). Going in, I knew at a very high level what blockchains were and how they functioned, but
+          to me it just sounded all hype and no substance (I had not read any technical papers or articles back then). Having taken the class
           and increasing my level of understanding, I have fully embraced the hype around upcoming cutting-edge blockchain technologies, thanks to
           friends as well as the wonderful course staff.
 ---
 
 I've recently been working on a series of personal notes on blockchain technologies and cryptocurrencies as a passion project,
 and also to brush up on my understanding. Last Spring, I was a student in Blockchain at Berkeley's "Introduction to Cryptocurrencies
-and Blockchain" DeCal (student run class). Going in, I knew at a very high level what blockchains were and how they functioned, but 
-to me it just sounded all hype and no substance (I had not read any technical papers or articles back then). Having taken the class 
+and Blockchain" DeCal (student run class). Going in, I knew at a very high level what blockchains were and how they functioned, but
+to me it just sounded all hype and no substance (I had not read any technical papers or articles back then). Having taken the class
 and increasing my level of understanding, I have fully embraced the hype around upcoming cutting-edge blockchain technologies, thanks to
 friends as well as the wonderful course staff.
 
 In the beginning of June, word got around among my connections that I was working on this project. One of my good friends, who is currently
 Co-head of Education at B@B joined me for the project, and we've been working at a steady pace online using ShareLatex's handy
-live collaborative editing feature. He introduced the project to the president of the organization, who immediately was a fan of our work, even offering 
-to make our set of notes available to future students of the course as a sort of textbook. 
+live collaborative editing feature. He introduced the project to the president of the organization, who immediately was a fan of our work, even offering
+to make our set of notes available to future students of the course as a sort of textbook.
 
 Not only have I been enjoying brushing up on blockchain, I've also been having fun writing documents in LaTeX, the document typeseting
-system. The documents come out looking very nice, so as a writer I can focus more on the content than on how the document looks. For those 
-curious, the project is currently open-sourced on GitHub [here](https://github.com/rustielin/Blockchain-Notes). I'm planning on compiling 
+system. The documents come out looking very nice, so as a writer I can focus more on the content than on how the document looks. For those
+curious, the project is currently open-sourced on GitHub [here](https://github.com/rustielin/Blockchain-Notes). I'm planning on compiling
 the PDF's manually and sticking them in the GitHub repo soon. But for now, Tex files can be compiled using an editor such as
-Gumi, or an online service such as ShareLatex. 
+Gumi, or an online service such as ShareLatex.
 
 Here's a taste of what we're writing...
 
@@ -52,4 +52,3 @@ Here's a taste of what we're writing...
 ...and what it compiles to:
 
 ![blockchain notes](/res/img/blockchain_notes.png)
-

@@ -7,7 +7,7 @@ headline: Analysis of python wrapper script of popular security tools for UNIX s
 **Authors: Rustie Lin & Nadir Akhtar**
 
 
-As the final assignment for a UC Berkeley student-run cybersecurity course, I am writing this blog post as an in-depth analysis of the python security script located at this link, https://github.com/PeterMosmans/security-scripts, credit to the original author. 
+As the final assignment for a UC Berkeley student-run cybersecurity course, I am writing this blog post as an in-depth analysis of the python security script located at this link, https://github.com/PeterMosmans/security-scripts, credit to the original author.
 
 The script `analyze_hosts.py` scans one or more hosts for security misconfigurations. It mainly is a wrapper around common open-sourced security tools, focused on facilitating security tests. For convenience, I'll paste some relevant snippets of code for analysis. The full security script can be found at the repository linked above.
 
@@ -66,7 +66,7 @@ if options['wpscan'] and not is_admin():
     options['wpscan'] = False
 ```
 
-And as mentioned before, if a package is not imported properly with the correct settings (called with `sudo` in this case), then the mapping `options['wpscan'] = False` 
+And as mentioned before, if a package is not imported properly with the correct settings (called with `sudo` in this case), then the mapping `options['wpscan'] = False`
 
 Afterwards, the nmap arguments are preprocessed. This is done in the `prepare_nmap_arguments` method. The requests of the users are translated from the arguments into the nmap specific syntax. This consists of checking through the presence of every option and appending flags as needed. Afterwards, the desired flags are joined together and stored within the `options` dictionary.
 
@@ -141,7 +141,6 @@ SSL_PORTS = [25, 443, 465, 993, 995]
 ```
 
 
-In summary, this post demonstrates the simplicity, modularity, and legibility of wrapper functions, along with their ability to speed up workflow by several orders simply with a few lines of code. With this wrapper acting as an intermediary between the user and several different types of tools, the user no longer needs to understand each tool individually. 
+In summary, this post demonstrates the simplicity, modularity, and legibility of wrapper functions, along with their ability to speed up workflow by several orders simply with a few lines of code. With this wrapper acting as an intermediary between the user and several different types of tools, the user no longer needs to understand each tool individually.
 
 Instead, by understanding the wrapper and its API, they have access to all desired functionality under the hood with ease. In addition, this python file makes it easier to communicate with peers, as there is a common language with which to discuss and debug any possible errors or issues. Lastly, by creating a utility like this, it allows less experienced developers or security engineers to get their hands on these more complicated tools by lowering the learning curve, as Java did for enterprise developers by abstracting away several machine-specific concepts necessary in C. By doing so, one has the option to quickly prototype and build with the abstractions provided by this software and dig deeper into the underlying tools later as they so choose, especially if they want to get into the nitty gritty to better understand how to make their code both more powerful and more efficient.
-

@@ -149,6 +149,6 @@ Hopefully this post has inspired you the reader to play around with Bash tools y
 
 * https://support.spatialkey.com/spatialkey-sample-csv-data/
 
-* My previous post titled [*UNIX and Bash Fundamentals*]({% post_url 2017-11-2-unix %}) 
+* My previous post titled [*UNIX and Bash Fundamentals*]({% post_url 2017-11-2-unix %})
 
 * Lecture material from Stat133

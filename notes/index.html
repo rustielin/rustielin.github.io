@@ -3,26 +3,25 @@ layout: default
 ---
 
 <p class="message">
-  Welcome to my blog! Here I post descriptions of recent projects and my thought processes, recent findings,
-  and anything that interests me. Updated periodically.
+  Some notes about various computer science topics, primarily for my own personal organization.
 </p>
 
 
 
-<div class="posts">
-  {% for post in paginator.posts %}
+<div>
+    {% for category in site.categorylist %}
+        <h2>{{ category | capitalize  }}</h2>
+        <ul>
+        {% for note in site.notes %}
 
-  <article class="post">
+            {% if note.category == category %}
 
-    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+            <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></li>
 
-    <div class="entry">
-      {{ post.headline | truncatewords:40}}
-    </div>
-
-  </article>
-
-  {% endfor %}
+            {% endif %}
+        {% endfor %}
+        </ul>
+    {% endfor %}
 </div>
 
 <div class="pagination">

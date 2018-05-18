@@ -1,11 +1,11 @@
 ---
-layout: post
-title: Notes on IPFS
-headline: Spent a while reading up on IPFS (InterPlanetary File System) today in preparation for a discussion section I led.
+layout: page
+title: IPFS
+category: blockchain
 ---
 
 <p class="message">
-  Some background context: As an education officer for Blockchain at Berkeley, one of my responsibilities early in the semester is to host informal discussions known as "Blockchills." Blockchills are mainly to expose new members to as much as the space as possible, and are generally in-depth discussions on specific topics. I had previously led blockchills on topics such as Cosmos and Tendermint, and this week's topic was IPFS, the InterPlanetary File System. Below is the agenda and some notes.
+  Some background context: As an education officer for Blockchain at Berkeley, one of my responsibilities early in the semester is to host informal discussions known as "Blockchills." Blockchills are mainly to expose new members to as much as the space as possible, and are generally in-depth discussions on specific topics. I had previously led blockchills on topics such as Cosmos and Tendermint, and this week's topic was IPFS, the InterPlanetary File System. Below is the agenda and some notes for the IPFS blockchill, 3/14/2018.
 </p>
 
 
@@ -24,7 +24,7 @@ headline: Spent a while reading up on IPFS (InterPlanetary File System) today in
     * SFS
 * IPFS From the Ground Up
 * Filecoin
-* Questions 
+* Questions
 
 # Notes
 
@@ -34,7 +34,7 @@ Notes from IPFS whitepaper and other resources for student reference.
 
 The [InterPlanetary File System](https://ipfs.io/) (IPFS) is a p2p distributed filesystem. A filesystem is an abstraction that contols how data is stored and retrieved.
 
-IPFS can be compared to the Web, but can more accurately be seen as a single BitTorrent swarm, exchanging objects within one Git repository. It provides high throughput content-addressed block storage model, with content-addressed hyperlinks. The structure forms a generalized Merkle DAG, upon which one can build cersioned file systems, blockchains, and even a Permanent Web. 
+IPFS can be compared to the Web, but can more accurately be seen as a single BitTorrent swarm, exchanging objects within one Git repository. It provides high throughput content-addressed block storage model, with content-addressed hyperlinks. The structure forms a generalized Merkle DAG, upon which one can build cersioned file systems, blockchains, and even a Permanent Web.
 
 Underlying all this, we have a distributed hashtable, incentivized block exchange, and self-certifying namespace. IPFS has no point of failure, and is Byzantine Fault Tolerant.
 
@@ -81,7 +81,7 @@ The central IPFS design principle is to model *all data* as part of the same Mer
 
 ### Self-Certified Filesystems -- SFS
 
-Using a scheme such that the *name* of an SFS file system certifies its server. 
+Using a scheme such that the *name* of an SFS file system certifies its server.
 
 ```bash
 /sfs/<Location>:<HostID>
@@ -92,8 +92,8 @@ HostID = hash(public_key || Location)
 
 Using ideas from DHTs, BitTorrent, Git, and SFS. IPFS is p2p, no nodes are privileged, IPFS nodes store IPFS objects (files, data structures, etc) in local storage. Stack of sub-protocols:
 * Identities: manage node identity generation and verification
-* Network: manages connections to other peers, using various underlying network protocols 
-* Routing: maintains information to location specific peers and objects, responding to both local and remote queries. (Defaults to DHT, but swappable) 
+* Network: manages connections to other peers, using various underlying network protocols
+* Routing: maintains information to location specific peers and objects, responding to both local and remote queries. (Defaults to DHT, but swappable)
 * Exchange: block exchange protocol (BitSwap) that governs efficient block distribution. Modelled as market, weakly inventivizing data replication.
 * Objects: Merkle DAG of content-addressed immutable objects with links.
 * Files: versioned file system hierarchy inspired by Git
