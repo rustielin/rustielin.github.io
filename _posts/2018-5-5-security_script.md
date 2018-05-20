@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python Security Script Analysis
-headline: Analysis of python wrapper script of popular security tools for UNIX systems
+headline: Analysis of python wrapper script of popular security tools for UNIX systems. As the final assignment for a UC Berkeley student-run cybersecurity course, I am writing this blog post as an in-depth analysis of the python security script located at this link, https://github.com/PeterMosmans/security-scripts, credit to the original author.
 ---
 
 **Authors: Rustie Lin & Nadir Akhtar**
