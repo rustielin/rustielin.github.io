@@ -54,6 +54,8 @@ var cy = cytoscape({
   }
 });
 
+cy.nodes().ungrabify()
+
 var bfs = cy.elements().bfs('#a', function(){}, true);
 
 var i = 0;
