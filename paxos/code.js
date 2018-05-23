@@ -1,10 +1,6 @@
 var cy = cytoscape({
   container: document.getElementById('cy'),
 
-  boxSelectionEnabled: false,
-  autoungrabify: true,
-  autounselectify: false,
-  panningEnabled: false,
   zoomingEnabled: false,
 
   style: cytoscape.stylesheet()
