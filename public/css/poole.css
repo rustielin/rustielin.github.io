@@ -435,3 +435,10 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+#cy {
+    width: 100%;
+    height: 80%;
+    left: 0%;
+    position: absolute;
+}
