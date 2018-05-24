@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Mastering Bitcoin
-headline: Leafcutter ants operate in a decentralized colony 'superorganism'. They have a queen to produce offspring, but do not
-          have a central authority to pass instructions to other ants. In a similar way, the Bitcoin network was engineered to
-          be decentralized.
+headline: I think that the ability to explain something  technical in an easy to understand non-technical way is the clearest indication of understanding. In writing my own book on Bitcoin, cryptocurrencies, and blockchain technologies, I have found the most difficult task to be explaining a highly technical subject to my intended non-technical audience in a short yet concise manner.
 ---
 
 <p class="message">

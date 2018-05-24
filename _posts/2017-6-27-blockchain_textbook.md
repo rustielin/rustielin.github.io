@@ -1,12 +1,7 @@
 ---
 layout: post
 title: Blockchain Textbook
-headline: I've recently been working on a series of personal notes on blockchain technologies and cryptocurrencies as a passion project,
-          and also to brush up on my understanding. Last Spring, I was a student in Blockchain at Berkeley's "Introduction to Cryptocurrencies
-          and Blockchain" DeCal (student run class). Going in, I knew at a very high level what blockchains were and how they functioned, but
-          to me it just sounded all hype and no substance (I had not read any technical papers or articles back then). Having taken the class
-          and increasing my level of understanding, I have fully embraced the hype around upcoming cutting-edge blockchain technologies, thanks to
-          friends as well as the wonderful course staff.
+headline: I've recently been working on a series of personal notes on blockchain technologies and cryptocurrencies as a passion project, and also to brush up on my understanding. Last Spring, I was a student in Blockchain at Berkeley's "Introduction to Cryptocurrencies and Blockchain" DeCal (student run class). Going in, I knew at a very high level what blockchains were and how they functioned, but to me it just sounded all hype and no substance (I had not read any technical papers or articles back then). Having taken the class and increasing my level of understanding, I have fully embraced the hype around upcoming cutting-edge blockchain technologies, thanks to friends as well as the wonderful course staff.
 ---
 
 I've recently been working on a series of personal notes on blockchain technologies and cryptocurrencies as a passion project,

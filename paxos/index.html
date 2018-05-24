@@ -4,13 +4,36 @@ layout: graph
 
 <html>
 
+<script>
 
+$(document).ready(function() {
+    $("#slider").slider({
+        max: 10,
+        slide: function (event, ui) {
+            n = ui.value
+        }
+    });
+});
+
+
+</script>
 
 <body>
     <h1>Hello cytoscape</h1>
+    <div class="slidecontainer">
+      <input id="slider" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <output id="output"></output>
+    </div>
+
+
+
+
 
         <div id="cy"></div>
 
     <script src="code.js"></script>
+
+
+
 </body>
 </html>

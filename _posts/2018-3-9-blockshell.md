@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blockshell, A Minimal Blockchain Learning CLI
-headline: I used some awesome open-sourced tools to teach a six hour Introduction to Bitcoin and Blockchain workshop.
+headline: I taught a six hour long workshop on an Introduction to Bitcoin and Blockchain for new Blockchain at Berkeley members. As the first part of new members' "Month of Learning" program, it is imperative for all members to have seen the same material, establishing a baseline knowledge that we expect from every one of our members.
 ---
 
 [Blockshell](https://github.com/rustielin/blockshell), credits to Daxeel

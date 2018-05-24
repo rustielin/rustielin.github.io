@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Giving My First Blockchain Lecture
-headline: I gave my first lecture for the Blockchain Fundamentals Decal on Bitcoin wallets and Simple Payment Verification. Afterwards, a student pointed out a typo in my notes.
+headline: Speaking about Bitcoin wallets was also good training for me, as I have a tendency to dive too deep into technical details, so for me, it was good training to practice my understanding of Bitcoin at a higher level, and to communicate it to the class in a concise manner.
 ---
 
 A bit of a late post, but I gave my first lecture on Bitcoin wallets for the Blockchain Fundamentals Decal on 9/26. Personally, I would have preferred to speak about cryptographic hash functions, blockchain mechanics, and lower level technical details instead -- the topics that excite me. Regardless, I am grateful to have had the opportunity to lecture the class I had taken the previous semester. Speaking about Bitcoin wallets was also good training for me, as I have a tendency to dive too deep into technical details, so for me, it was good training to practice my understanding of Bitcoin at a higher level, and to communicate it to the class in a concise manner.

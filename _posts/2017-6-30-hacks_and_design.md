@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Hacking, Precision, and Change
-headline: I've recently undertaken a research project involving designing and implementing a consensus protocol on a blockchain system.
-          This project has made me contemplate distinct design strategies and the optimal situations to use them...
+title: Hacking vs. Precision
+headline: It's obvious that strategy 1 is useful whenever you're rapidly prototyping, or trying to get something to work as a proof of concept, and that strategy 2 is useful for long-term deployable projects where there's more time to contemplate all the possible edge cases and potential exploits.
 ---
 
 <p class="message">
@@ -56,12 +55,10 @@ a really hard cryptographic puzzle. Once solved (found the proof-of-work), they 
 solution, and either reject or accept it. Then they keep mining.
 
 Bitcoin's Proof-of-Work scheme catches a lot of malicious behavior, and ensures that the network will continue to be healthy
-as long as 51% of all nodes are honest. There's a law that states that the longest blockchain must be the legitimate blockchain,
-and that people mine on the longest one because there's no economic incentive to mine on a shorter one and get no mining reward.
-An interesting effect of this is that forks
-to the Bitcoin blockchain really only pose a threat when it's 6 or so blocks deep (showing that there's enough following.)
+as long as 51% of all nodes are honest. There's an assumption that the longest blockchain must be the legitimate blockchain,
+and people mine on the longest one because there's no economic incentive to mine on a shorter one and get no mining reward.
 
-In addition to being very precise in its cryptography/code and catching possible malicious behavior, Bitcoin also has built
+In addition to being very precise in its cryptography and code, and catching Byzantine behavior, Bitcoin also has built
 into its protocol support for BIPs (Bitcoin Improvement Proposals) which allow it the flexibility to survive. Bitcion realizes that
 it's not a perfect system, and allows itself to adapt to maintain the health of its network. This I feel is an important feature of
 protocols and also in design in general.
@@ -77,15 +74,14 @@ for government is a real thing!) There must be a way to grow, otherwise the syst
     <br>
     <ol>
         <li> After the hacking of the DAO, two main groups of thought
-             led to the creation of Ethereum Classic, and the continuation of Ethereum. Those who believed that 'code is law', and that the
+             led to the split between Ethereum and Ethereum Classic. Those who believed that 'code is law', and that the
              design system must be followed no matter the cost, continued in Ethereum Classic. Those who believed that the previous group's
              mindset was too strict and allowed no room for growth continued in Ethereum. Both chains exist currently, so I guess there's merit
              in both schools of thought. </li>
         <li>
         A less technical/crypto related example deals with the hypothetical automation of police and surveillance. In compliance
         with traffic laws, say that all car manufacturers get together to design cars that automatically pull over when they surpass
-        the speed limit. The moment there's a life threatening situation that requires someone to drive faster than the speed limit to stay
-        alive, the system breaks because the situation was not accounted for.
+        the speed limit. The moment there's a life threatening situation that requires someone to drive faster than the speed limit, the system breaks because the situation was not accounted for.
         </li>
     </ol>
     <br>

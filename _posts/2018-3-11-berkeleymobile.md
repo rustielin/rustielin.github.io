@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Updates to Berkeley Mobile
-headline: My contributions to Berkeley Mobile, and the value of modularization and standardization.
+headline: When I first joined in Fall 2017, I was shocked that there was no documentation for Berkeley Mobile. All that existed was a tiny README that had instructions on how to run a single JUnit test. Due to this lack of coordination among previous developers, much gets lost in between ideation and the actual product that is pushed out. My first couple weeks on the team, I took it upon myself to completely read through the codebase, and understand Berkeley Mobile Android's architecture and general dataflow.
 ---
 
 <p class="message">
@@ -10,7 +10,7 @@ Berkeley Mobile 8.1 is now available on the Google Play Store <a href="https://p
 
 One of the biggest problems we face in Berkeley Mobile, or I guess any long-term software project run by the ASUC, is that students come and go. Old members graduate or get too busy, and new members are brought on-board semesterly. Because of this, you can imagine that the codebase gets pretty messy.
 
-When I first joined in Fall 2017, I was shocked that there was no documentation for Berkeley Mobile, all that existed was a tiny README that had instructions on how to run a single JUnit test. Due to this lack of coordination among previous developers, much gets lost in between ideation and the actual product that is pushed out. My first couple weeks on the team, I took it upon myself to completely read through the codebase, and understand Berkeley Mobile Android's architecture and general dataflow.
+When I first joined in Fall 2017, I was shocked that there was no documentation for Berkeley Mobile. All that existed was a tiny README that had instructions on how to run a single JUnit test. Due to this lack of coordination among previous developers, much gets lost in between ideation and the actual product that is pushed out. My first couple weeks on the team, I took it upon myself to completely read through the codebase, and understand Berkeley Mobile Android's architecture and general dataflow.
 
 <p class="message">
 Being a seasoned software developer, I advocate for expressing more with less code, and in general being more effective with everyone's time.
