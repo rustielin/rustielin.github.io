@@ -1,7 +1,7 @@
 ---
 layout: page
 title: IPFS
-category: blockchain
+category: distributed systems
 ---
 
 <p class="message">
