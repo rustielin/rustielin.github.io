@@ -1,8 +1,8 @@
-ELECTION_TIMEOUT = 300 // in ms
-HEARTBEAT_TIMEOUT = 100 // in ms
+ELECTION_TIMEOUT = 1000 // in ms
+HEARTBEAT_TIMEOUT = 1000 // in ms
 LEADER = 0 // index of leader
 
-PIE_SLICES = 16 // 1 to 16
+PIE_SLICES = 5 // 1 to 16
 
 var cy = cytoscape({
   container: document.getElementById('cy'),
@@ -76,24 +76,24 @@ var cy = cytoscape({
   layout: {
     name: 'circle',
     roots: '#a',
-    padding: 100
+    padding: 150
   }
 });
 
-var bfs = cy.elements().dfs('#a', function(){}, false);
+// var bfs = cy.elements().dfs('#a', function(){}, false);
 
-var i = 0;
-var highlightNextEle = async function() {
-  if( i < bfs.path.length ){
-    bfs.path[i].addClass('highlighted');
-    for (j = 1; j <= PIE_SLICES; j++) {
-        bfs.path[i].data("foo", j)
-        await sleep(ELECTION_TIMEOUT / PIE_SLICES)
-    }
-    i++;
-    highlightNextEle()
-  }
-};
+// var i = 0;
+// var highlightNextEle = async function() {
+//   if( i < bfs.path.length ){
+//     bfs.path[i].addClass('highlighted');
+//     for (j = 1; j <= PIE_SLICES; j++) {
+//         bfs.path[i].data("foo", j)
+//         await sleep(ELECTION_TIMEOUT / PIE_SLICES)
+//     }
+//     i++;
+//     highlightNextEle()
+//   }
+// };
 
 var electionCycle = async function() {
     i = 0
@@ -143,5 +143,5 @@ function sleep(ms) {
 
 // kick off first highlight
 // highlightNextEle();
-electionCycle();
+// electionCycle();
 heartbeatCycle();
