@@ -10,4 +10,6 @@ After a grueling semester of balancing heavy courseload, side projects, and work
 * [Berkeley News](http://news.berkeley.edu/2018/06/14/new-uc-berkeley-online-course-will-make-blockchain-so-clear-you-can-explain-it-to-your-grandma/)
 * [Computerworld](https://www.computerworld.com/article/3282791/blockchain/uc-berkeley-puts-blockchain-training-online-thousands-sign-up.html)
 
+Currently 10,100+ self-motivated students from around the world have signed up for our first course, which explains the key innovations of blockchain, through it's first use-case: Bitcoin.
+
 Huge shoutout to my team for staying dedicated through the entire semester <3
