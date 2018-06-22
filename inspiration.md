@@ -9,10 +9,10 @@ title: Inspiration
 
 [CAP Twelve Years Later: How the "Rules" Have Changed](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
 
-<p class="message">
-  "To think - to really think - you have to write. Chances are, you're fooling yourself; you're only pretending to think. If you're thinking about writing you only think you're thinking" - Leslie Lamport
-</p>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-4Yp3j_jk8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BDEo5XpZcXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-k3mVnRlQLU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aKHbqm-D62Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
