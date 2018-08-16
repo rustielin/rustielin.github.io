@@ -4,6 +4,10 @@ title: Thoughts on Time
 headline: Two days pass, and Bob hasn't heard from Alice. So Bob wonders -- has Alice baked the cake? The event of Bob wondering about Alice's cake and Alice's baking/not baking of the cake are concurrent. In physics, we might say that Alice both baked and didn't bake the cake, but in distributed systems talk, we just simply don't know.
 ---
 
+<div class="message">
+Note: this was written very late at night and with no revision, so this is pretty much my pure thought process, very quickly and roughly sketched into markdown. 
+</div>
+
 I began the summer eager to start coding again after having spent the last year at school taking only courses on computer science theory. My intended focus was blockchain development, and I wanted to build some projects with Cosmos and Tendermint.
 
 However, after some contemplation, I decided that it would be more impactful to approach blockchain development from an academic standpoint. This was especially the case after watching a particular talk by Leslie Lamport titled "Thinking Above the Code." Being in a university just one or two hops away from literal distributed systems gods, I changed my focus to learning about distributed systems from the very beginning -- a full academically-grounded survey.
