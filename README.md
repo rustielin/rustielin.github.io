@@ -1,3 +1,3 @@
 Personal website/portfolio built using Jekyll, Lanyon, and Poole.
 
-Also [http://rustielin.me](http://rustielin.me)
+Also [https://rustielin.github.io](https://rustielin.github.io)
