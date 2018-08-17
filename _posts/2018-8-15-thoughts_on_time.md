@@ -5,7 +5,7 @@ headline: Two days pass, and Bob hasn't heard from Alice. So Bob wonders -- has 
 ---
 
 <div class="message">
-Note: this was written very late at night and with no revision, so this is pretty much my pure thought process, very quickly and roughly sketched into markdown. 
+Note: this was written very late at night and with no revision, so this is pretty much my pure thought process, very quickly and roughly sketched into markdown.
 </div>
 
 I began the summer eager to start coding again after having spent the last year at school taking only courses on computer science theory. My intended focus was blockchain development, and I wanted to build some projects with Cosmos and Tendermint.
@@ -23,6 +23,10 @@ Through the lens of a computer scientist, a fundamental challenge to face here i
 Amongst other early distributed systems papers, "Time, Clocks, and the Ordering of Events in a Distributed System", written by Leslie Lamport, stood out to me for being incredibly intuitive. In it, Lamport explains what it means for an event to precede -- or happen before -- another. A majority of the paper is spent formalizing the definition of $$a \leftarrow b$$, read as $$a$$ happened before $$b$$.
 
 The key insight is that at the most basic level, $$a \leftarrow b$$ if either $$a$$ and $$b$$ occur in the same process and $$a$$ happened at an earlier time than $$b$$, or $$a$$ and $$b$$ occur in different processes and $$a$$ is the sending of a message and $$b$$ is the receiving of a message. the $$\leftarrow$$ operator is also composable.
+
+![res/img/20180816123412952-atom-img-paste.png]({{ "res/img/20180816123412952-atom-img-paste.png" | absolute_url}})
+
+Above, $$p_1$$ and $$q_1$$ are concurrent. $$p_1 \leftarrow q_7$$ and $$q_1 \leftarrow q_7$$
 
 Machines may see events in different physical order, but they must agree on a partial ordering of events such that consensus can occur. In his paper, Lamport explains that this is not a problem of computer science but that of physics, and explains the ordering of events and associated phenomena as parallel to that of special relativity.
 
