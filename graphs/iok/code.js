@@ -28,9 +28,19 @@ var cy = cytoscape({
         'target-arrow-color': '#75b5aa',
         'transition-property': 'background-color, line-color, target-arrow-color',
         'transition-duration': '0.5s'
+      })
+    .selector('.cycleHighlighted')
+      .css({
+        'background-color': '#E8747C',
+        'line-color': '#E8747C',
+        'target-arrow-color': '#E8747C',
+        'transition-property': 'background-color, line-color, target-arrow-color',
+        'transition-duration': '0.5s'
       }),
 
   elements: {
+
+      // throw all this in a database
       nodes: [
         { data: { id: 'lec1-1', title: 'Bitcoin Protocol & Consensus', subtitle: 'A High Level Overview'} },
         { data: { id: 'lec1-2', title: 'Blockchain History', subtitle: 'From the Cypherpunk Movement to JP Morgan Chase' } },
@@ -57,14 +67,12 @@ var cy = cytoscape({
 
         // bridge
         { data: { id: 'lec1-6_2-1', source: 'lec1-6', target: 'lec2-1' } }, 
-        { data: { id: 'lec2-1_1-6', source: 'lec2-1', target: 'lec1-6' } }, 
 
         // course 2
         { data: { id: 'lec2-1_2-2', source: 'lec2-1', target: 'lec2-2' } },
-        { data: { id: 'lec2-1_2-3', source: 'lec2-1', target: 'lec2-3' } },
-        { data: { id: 'lec2-1_2-4', source: 'lec2-1', target: 'lec2-4' } },
-        { data: { id: 'lec2-1_2-5', source: 'lec2-1', target: 'lec2-5' } },
-        { data: { id: 'lec2-2_2-6', source: 'lec2-2', target: 'lec2-6' } },
+        { data: { id: 'lec2-2_2-3', source: 'lec2-2', target: 'lec2-3' } },
+        { data: { id: 'lec2-2_2-4', source: 'lec2-2', target: 'lec2-4' } },
+        { data: { id: 'lec2-2_2-5', source: 'lec2-2', target: 'lec2-5' } },
         { data: { id: 'lec2-3_2-6', source: 'lec2-3', target: 'lec2-6' } },
         { data: { id: 'lec2-4_2-6', source: 'lec2-4', target: 'lec2-6' } },
         { data: { id: 'lec2-5_2-6', source: 'lec2-5', target: 'lec2-6' } },
@@ -78,12 +86,23 @@ var cy = cytoscape({
   },
 });
 
+var setNodeData = (node) => {
+  document.getElementById('nodetitle').innerText = node.data('title');
+  document.getElementById('nodesubtitle').innerText = node.data('subtitle');
+
+}
+
 var removeHighlighted = ( el ) => {
   el.removeClass('highlighted');
+  el.removeClass('cycleHighlighted');
 }
 
 var setHighlighted = async ( el ) => {
   el.addClass('highlighted');
+}
+
+var setCycleHighlighted = async ( el ) => {
+  el.addClass('cycleHighlighted');
 }
 
 var clearHighlighted = () => {
@@ -105,10 +124,12 @@ var drawDependency = (evt) => {
   hasCycle = false;
   var graph = calcDependency(node, cy.collection());
   if (hasCycle) {
-    alert("cycle detected!");
+    graph.filter(notRootFilter).forEach(setCycleHighlighted);
+  } else {
+    graph.filter(notRootFilter).forEach(setHighlighted);
   }
-  graph.filter(notRootFilter).forEach(setHighlighted);
   node.addClass('selected');
+  setNodeData(node);
 }
 
 // recursively calculate dependency graph
@@ -131,4 +152,5 @@ var calcDependency = (root, dep) => {
   return dep;
 }
 
+// cy.fit()
 cy.on('tap', 'node', drawDependency);

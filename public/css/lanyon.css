@@ -567,9 +567,16 @@ a.pagination-item:hover {
 
 #cy {
     width: 100%;
-    height: 80%;
+    height: 100%;
     left: 0%;
     position: absolute;
+}
+
+#cytext {
+  width: 25%;
+  height: 100%;
+  left: 70%;
+  position: absolute;
 }
 
 .checkBullet > ul > li {
