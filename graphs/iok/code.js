@@ -1,3 +1,10 @@
+const firestore = firebase.firestore();
+const settings = {/* your settings... */ timestampsInSnapshots: true};
+firestore.settings(settings);
+
+const NODE_COLLECTION_NAME = 'iok-nodes';
+const EDGE_COLLECTION_NAME = 'iok-edges';
+
 var cy = cytoscape({
   container: document.getElementById('cy'),
   style: cytoscape.stylesheet()
@@ -36,61 +43,87 @@ var cy = cytoscape({
         'target-arrow-color': '#E8747C',
         'transition-property': 'background-color, line-color, target-arrow-color',
         'transition-duration': '0.5s'
-      }),
-
-  elements: {
-
-      // throw all this in a database
-      nodes: [
-        { data: { id: 'lec1-1', title: 'Bitcoin Protocol & Consensus', subtitle: 'A High Level Overview'} },
-        { data: { id: 'lec1-2', title: 'Blockchain History', subtitle: 'From the Cypherpunk Movement to JP Morgan Chase' } },
-        { data: { id: 'lec1-3', title: 'Bitcoin Mechanics & Optimizations', subtitle: 'A Technical Overview' } },
-        { data: { id: 'lec1-4', title: 'Wallet Mechanics, Mining, & More', subtitle: 'Bitcoin IRL' } },
-        { data: { id: 'lec1-5', title: 'Game Theory & Network Attacks', subtitle: 'How to Attack Bitcoin' } },
-        { data: { id: 'lec1-6', title: 'Ethereum', subtitle: 'Enabling a Decentralized Future' } },
-        { data: { id: 'lec2-1', title: 'Distributed Systems & Consensus', subtitle: 'Trust Without Trust' } },
-        { data: { id: 'lec2-2', title: 'Cryptoeconomics & Proof-of-Stake', subtitle: 'Securing Incentives' } },
-        { data: { id: 'lec2-3', title: 'Enterprise Blockchain', subtitle: 'Real-World Applications' } },
-        { data: { id: 'lec2-4', title: 'Scaling Blockchain', subtitle: 'Cryptocurrency for the Masses' } },
-        { data: { id: 'lec2-5', title: 'Anonymity, Mixing, & Altcoins', subtitle: 'The Fight for Privacy' } },
-        { data: { id: 'lec2-6', title: 'A Blockchain Powered Future', subtitle: '' } }
-
-      ],
-
-      edges: [
-        // course 1
-        { data: { id: 'lec1-1_1-3', source: 'lec1-1', target: 'lec1-3' } },
-        { data: { id: 'lec1-3_1-4', source: 'lec1-3', target: 'lec1-4' } },
-        { data: { id: 'lec1-4_1-5', source: 'lec1-4', target: 'lec1-5' } },
-        { data: { id: 'lec1-5_1-6', source: 'lec1-5', target: 'lec1-6' } },
-        { data: { id: 'lec1-2_1-6', source: 'lec1-2', target: 'lec1-6' } },
-
-        // bridge
-        { data: { id: 'lec1-6_2-1', source: 'lec1-6', target: 'lec2-1' } }, 
-
-        // course 2
-        { data: { id: 'lec2-1_2-2', source: 'lec2-1', target: 'lec2-2' } },
-        { data: { id: 'lec2-2_2-3', source: 'lec2-2', target: 'lec2-3' } },
-        { data: { id: 'lec2-2_2-4', source: 'lec2-2', target: 'lec2-4' } },
-        { data: { id: 'lec2-2_2-5', source: 'lec2-2', target: 'lec2-5' } },
-        { data: { id: 'lec2-3_2-6', source: 'lec2-3', target: 'lec2-6' } },
-        { data: { id: 'lec2-4_2-6', source: 'lec2-4', target: 'lec2-6' } },
-        { data: { id: 'lec2-5_2-6', source: 'lec2-5', target: 'lec2-6' } },
-      ]
-    },
-
-  layout: {
-    name: 'dagre',
-    roots: '#lec1-1',
-    padding: 150
-  },
+      })
 });
 
 var setNodeData = (node) => {
   document.getElementById('nodetitle').innerText = node.data('title');
   document.getElementById('nodesubtitle').innerText = node.data('subtitle');
+  document.getElementById('nodetext').innerHTML = node.data('description').replace(/\\n/g, '<br><br>'); // hmmm
 
+  // set link data
+  var ul = document.getElementById('nodelinks');
+  ul.innerHTML = '';
+  if (!node.data('links') || node.data('links').length == 0) {
+      ul.innerHTML = 'No Links :(';
+      return;
+  } 
+  for (i = 0; i < node.data('links').length; i++) {
+      var a = document.createElement('a');
+      var linkText = document.createTextNode(node.data('links')[i].name);
+      a.appendChild(linkText);
+      a.title = node.data('links')[i].name;
+      a.href = node.data('links')[i].url;
+
+      var li = document.createElement('li');
+      li.appendChild(a);
+      ul.appendChild(li);
+  }
 }
+
+var loadNodes = () => {
+  return new Promise(function (resolve) {
+      firestore.collection(NODE_COLLECTION_NAME).get().then(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+              // doc.data() is never undefined for query doc snapshots
+              console.log(doc.id, " => ", doc.data());
+              nodeData = doc.data();
+              nodeData['id'] = doc.id;
+              cy.add({
+                  group: "nodes",
+                  data: nodeData
+              });
+          });
+          resolve();
+      });
+  });
+}
+
+var loadEdges = () => {
+  return new Promise(function (resolve) {
+      firestore.collection(EDGE_COLLECTION_NAME).get().then(function(querySnapshot) {
+          querySnapshot.forEach(function(doc) {
+              // doc.data() is never undefined for query doc snapshots
+              console.log(doc.id, " => ", doc.data());
+              edgeData = doc.data();
+              edgeData['id'] = doc.id;
+              cy.add({
+                  group: "edges",
+                  data: edgeData
+              });
+          });
+          resolve();
+      });
+  })
+}
+
+var setLayout = () => {
+  // can only figure out layout once all graph loaded
+  return new Promise(function (resolve) {
+      var layout = cy.layout({ 
+          name: 'dagre',
+          roots: '#iok',
+          padding: 150
+      });
+      layout.run(); 
+      resolve();
+  })
+}
+
+// load in the nodes and edges and set the layout
+loadNodes()
+  .then(() => loadEdges())
+  .then(() => setLayout());
 
 var removeHighlighted = ( el ) => {
   el.removeClass('highlighted');
