@@ -4,7 +4,7 @@ title: Blockchain Education
 ---
 
 <p class="message">
-  A repository of some of my favorite blockchain education resources. 
+  A repository of some of my favorite blockchain education resources. Some resources not necessarily blockchain focused, but are good for general education/context.
 </p>
 
 # Courses
@@ -26,3 +26,13 @@ title: Blockchain Education
 * [A Blockchain Powered Future: Program Conclusion](https://drive.google.com/open?id=1mxzNCSxjW6QdfLT7nCSmTQ7IpAZOxzm8)
 
 [Blockchain for Developers](https://learnblockcha.in)
+
+# Papers
+* [MetaAnalysis of Alternative Consensus Protocols](https://github.com/Mechanism-Labs/MetaAnalysis-of-Alternative-Consensus-Protocols)
+* [In Search of an Understandable Consensus Algorithm (Extended Version)](https://raft.github.io/raft.pdf)
+* [The Hitchhiker’s Guide to Blockchains: A Trust Based Taxonomy](https://wandisco.com/assets/whitepapers/the-hitchhikers-guide-to-blockchains.pdf)
+* [Majority is not Enough: Bitcoin Mining is Vulnerable](https://arxiv.org/pdf/1311.0243.pdf)
+* [Zerocash: Decentralized Anonymous Payments from Bitcoin](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6956581)
+* [Tendermint: Byzantine Fault Tolerance in the Age of Blockchains](https://allquantor.at/blockchainbib/pdf/buchman2016tendermint.pdf)
+* [Cosmos: A Network of Distributed Ledgers](https://cosmos.network/resources/whitepaper)
+* [The Part-Time Parliament](https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
