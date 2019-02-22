@@ -17,6 +17,10 @@ title: Projects
 * Designed scalable data ingestion pipeline on Google Cloud Platform
 * Built with **Google Cloud Platform** (App Engine, Compute Engine, Cloud Storage, Cloud Functions), **ReactJS**, **ExpressJS** webserver, data analysis on **Jupyter**
 
+### Consensus Simulation
+* Simulation of relaxed consensus problem 
+* Built with **CytoscapeJS** for graph visualizations, **ExpressJS** serving **SocketIO** websocket, **Google Cloud Platform**, **Redis** for routing between simulation instances
+
 ### Atom Image Paste
 * [Atom Image Paste on the Atom package browser](https://atom.io/packages/atom-image-paste)
 * Creates PNG in specified directory from image in clipboard
