@@ -9,6 +9,14 @@ title: Projects
 
 </p>
 
+### DEEPsus
+* [Davis Environmental and Energy Platform for Sustainability](https://devpost.com/software/deepsus)
+* Hack Davis 2019 1st Place Best Use of OSIsoft Data
+* Real time data analytics from OSI PI system on UC Davis campus
+* Explatory data analysis of historical OSIsoft data (esp chilled water trends)
+* Designed scalable data ingestion pipeline on Google Cloud Platform
+* Built with **Google Cloud Platform** (App Engine, Compute Engine, Cloud Storage, Cloud Functions), **ReactJS**, **ExpressJS** webserver, data analysis on **Jupyter**
+
 ### Atom Image Paste
 * [Atom Image Paste on the Atom package browser](https://atom.io/packages/atom-image-paste)
 * Creates PNG in specified directory from image in clipboard
