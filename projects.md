@@ -21,6 +21,19 @@ title: Projects
 * Simulation of relaxed consensus problem 
 * Built with **CytoscapeJS** for graph visualizations, **ExpressJS** serving **SocketIO** websocket, **Google Cloud Platform**, **Redis** for routing between simulation instances
 
+### Blockchain Education
+* Some speaking engagements outside of edX courses
+* Selected speaking engagements:
+  * Blockchain Fundamentals
+    * Various UC Berkeley student organizations, Fall 2017
+    * Blockchain 101 Workshop, Feb 2018
+  * Distributed Systems & Alternative Consensus
+    * National Tsing Hua University, Jan 2018
+    * National Chengchi University, Jan 2018
+  * Bitcoin Wallet Mechanics
+    * Blockchain Fundamentals DeCal, Sep 2017
+  * Decentralizing Education, various 
+
 ### Atom Image Paste
 * [Atom Image Paste on the Atom package browser](https://atom.io/packages/atom-image-paste)
 * Creates PNG in specified directory from image in clipboard

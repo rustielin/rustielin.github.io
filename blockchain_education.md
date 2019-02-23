@@ -7,7 +7,7 @@ title: Blockchain Education
   A repository of some of my favorite blockchain education resources. Some resources not necessarily blockchain focused, but are good for general education/context.
 </p>
 
-# Courses
+## Courses & Slides
 
 [CS198.1x Bitcoin and Cryptocurrencies](https://www.edx.org/course/bitcoin-and-cryptocurrencies)
 * [Bitcoin Protocol & Consensus: A High Level Overview](https://drive.google.com/open?id=1Jt4uXBs-U5ESEgfXQfZnw24UxSJD5JBP)
@@ -27,7 +27,7 @@ title: Blockchain Education
 
 [Blockchain for Developers](https://learnblockcha.in)
 
-# Papers
+## Papers
 * [MetaAnalysis of Alternative Consensus Protocols](https://github.com/Mechanism-Labs/MetaAnalysis-of-Alternative-Consensus-Protocols)
 * [In Search of an Understandable Consensus Algorithm (Extended Version)](https://raft.github.io/raft.pdf)
 * [The Hitchhiker’s Guide to Blockchains: A Trust Based Taxonomy](https://wandisco.com/assets/whitepapers/the-hitchhikers-guide-to-blockchains.pdf)
@@ -36,3 +36,11 @@ title: Blockchain Education
 * [Tendermint: Byzantine Fault Tolerance in the Age of Blockchains](https://allquantor.at/blockchainbib/pdf/buchman2016tendermint.pdf)
 * [Cosmos: A Network of Distributed Ledgers](https://cosmos.network/resources/whitepaper)
 * [The Part-Time Parliament](https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
+
+## Selected Lecture Videos
+
+<iframe style="text-align: center" width="560" height="315" src="https://www.youtube.com/embed/6yFtb-c99LM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hm5LAxKxrD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3wUp5V-4s8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kwf_noxhw1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6prTenv1-tw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
