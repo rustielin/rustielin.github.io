@@ -8,9 +8,14 @@
     <p>Check out my works below:</p>
   </div>
 
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+  <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
+
+  <a class="sidebar-nav-item" href="{{site.baseurl}}/blog">Blog</a>
+  <a class="sidebar-nav-item" href="{{site.baseurl}}/notes">Notes</a>
+  <a class="sidebar-nav-item" href="https://drive.google.com/file/d/0B46VW36KYd_NcDZUbmJEVWFmRm8/view?usp=sharing">Resume</a>
+  
+  <nav class="sidebar-nav">
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -24,11 +29,6 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-
-    <a class="sidebar-nav-item" href="https://drive.google.com/file/d/0B46VW36KYd_NcDZUbmJEVWFmRm8/view?usp=sharing">Resume</a>
-    <a class="sidebar-nav-item" href="{{site.baseurl}}/blog">Blog</a>
-    <a class="sidebar-nav-item" href="{{site.baseurl}}/notes">Notes</a>
-    <a class="sidebar-nav-item" href="https://github.com/rustielin/Blockchain-Notes/blob/master/archive/blockchain_textbook_draft_updated.pdf">Blockchain Book</a>
 
   </nav>
 

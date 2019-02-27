@@ -4,7 +4,7 @@ title: Blockchain Education
 ---
 
 <p class="message">
-  A repository of some of my favorite blockchain education resources. Some resources not necessarily blockchain focused, but are good for general education/context.
+  A repository of some of my favorite blockchain education resources made by me and others. Some resources not necessarily blockchain focused, but are good for general education/context.
 </p>
 
 ## Courses & Slides
@@ -25,7 +25,11 @@ title: Blockchain Education
 * [The Fight for Privacy: Anonymity, Mixing & Altcoins](https://drive.google.com/open?id=1hVbX0yj_u_E11Q9SsfM4MCjgbdO1_r1Q)
 * [A Blockchain Powered Future: Program Conclusion](https://drive.google.com/open?id=1mxzNCSxjW6QdfLT7nCSmTQ7IpAZOxzm8)
 
-[Blockchain for Developers](https://learnblockcha.in)
+[Blockchain for Developers](https://learnblockcha.in)  
+
+[DRAFT: Introduction to Cryptocurrencies and Blockchain: A High Level Overview](https://github.com/rustielin/Blockchain-Notes/blob/master/archive/blockchain_textbook_draft_updated.pdf)
+* Fun fact: Blockchain Fundamentals was previously known as the Cryptocurrency DeCal, hence the title above
+* My attempt at turning my notes into a "textbook", probably staying a draft forever
 
 ## Papers
 * [MetaAnalysis of Alternative Consensus Protocols](https://github.com/Mechanism-Labs/MetaAnalysis-of-Alternative-Consensus-Protocols)
