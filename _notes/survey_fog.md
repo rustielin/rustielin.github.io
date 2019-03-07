@@ -32,13 +32,11 @@ Cassandra is a distributed key value store that uses a one hop DHT. Ranges of th
 
 IPFS is arguably simpler than both Rados and Cassandra in design, and famously leverages two well known open source technologies. BitTorrent is used to effectively transfer large data between users in a p2p fashion, and Kademlia DHT is used to store location metadata for the data transferred by BitTorrent. Notable is the location management system in IPFS compared to Rados and Cassandra. Rados and Cassandra are both designed to minimize communication and are able to locate and fetch data without extra communication from the client's viewpoint. When a client stores an object in IPFS, the connected IPFS node will store it locally and note the object location in kademlia DHT. When a client queries for an object in IPFS, the connected IPFS node will consult kademlia DHT and forward the request to the correct node. Upon receiving the object, the intermediate IPFS node will cache the object such that future retrievals of the same object by the client will maximize on spacial locality. This is only the case if the client calls an IPFS node geographically close to it. And this  The new replica of the data will also be announced on the DHT. Thus, IPFS supports native data mobility. Also, IPFS uses immutable objects, and objects are all content addressed, making it easier to maintain consistency of replicas across IPFS nodes.
 
-
-// some more stuff here
-
 ## FogBus
 
+## Aside: Blockchain for Swarm
 
-
+Recent findings in swarm robotics suggest the combined use of local and global information to achieve fault tolerance and scalability such as those observed in nature. [6](https://dl.acm.org/citation.cfm?id=2843116) Malicious members of a swarm are clearly detrimental to swarm health and pursuance of common goal, especially if swarm members base their policy as a function of local knowledge. As swarm technology begins to lean more on explicit communication and global view, observance of security and fault tolerance trends in blockchain potentially opens the door for innovation. Message authentication and integrity can be solved by using a self contained public key infrastructure similar to the "web of trust" model in blockchain. 
 
 ## References
 
@@ -47,3 +45,4 @@ IPFS is arguably simpler than both Rados and Cassandra in design, and famously l
 3. [Performance Analysis of Object Store Systems in a Fog/Edge Computing Infrastructures](https://www.computer.org/csdl/proceedings/cloudcom/2016/1445/00/07830696.pdf)
 4. [Blockchain and Fog: Made for Each Other](https://blogs.cisco.com/innovation/blockchain-and-fog-made-for-each-other)
 5. [CRUSH: Controlled, Scalable, Decentralized Placement of Replicated Data](https://ceph.com/wp-content/uploads/2016/08/weil-crush-sc06.pdf)
+6. [A Review of Swarm Robitics Tasks](https://dl.acm.org/citation.cfm?id=2843116)
