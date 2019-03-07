@@ -5,7 +5,7 @@ category: distributed systems
 ---
 
 <p class="message">
-  Just some notes on various DHT papers and various other resources.
+  Just some notes on various DHT papers and various other resources. Very messy.
 </p>
 
 ## Chord
@@ -19,6 +19,8 @@ Consistent hashing to determine node ID, and enables ring structure.
 Nodes know clockwise successors.
 Nodes also consider finger tables, where for keyspace of size $2^m$, the $i$th entry in the finger table for node ID $n$ has the value of the first node ID such that $id \geq n + 2^i \mod{2^m}$
 
+Files are stored in the same way nodes are allocated in the ring. Files are identified by the hash of their filename, and are stored at the first peer it maps to (e.g. first peer immediately to the right of the keyspace.)
+
 ### Advantages
 
 Chord emphasized the frequency of node arrivals and departures. Nodes going offline, troubled connection, etc are all concerns that modern distributed systems should consider. At a more general level, Byzantine fault tolerance may also be considered, but that was not the focus of Chord. 
@@ -29,8 +31,7 @@ Chord was not designed to anonymous, and thus assigns responsibility for documen
 
 Chord is not anonymous by design, which means that by its default formulation, is not compatible with anonymity focused distributed systems of today.
 
-Node IDs in Chord are calculated by hashing the node's IP address, and this would be easy to spoof and to Sybil attack.
-
+Node IDs in Chord are calculated by hashing the node's IP address, and this would be easy to spoof and to Sybil attack. Similarly, keys in Chord are not content addressed but rather constructed by hashing the file name. This can be easily spoofed, especially when considering that only one version of the file for each file name can be stored at a time. It may also be the case that if a node is designated to store a file $x$, it may serve any verion of $x$ or even change $x$ arbitrarily. While there is decentralization in terms of topology, nodes are not able to host their own files, and instead depend on a peer, or set of peers (depending on replication parameters), to host their file for them.
 
 
 ## Kademlia
