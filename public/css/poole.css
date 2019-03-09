@@ -300,6 +300,12 @@ tbody tr:nth-child(odd) th {
   margin-right: auto;
 }
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
 
 /*
  * Masthead
