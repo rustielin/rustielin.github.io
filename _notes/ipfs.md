@@ -1,6 +1,6 @@
 ---
 layout: page
-title: IPFS
+title: IPFS Overview
 category: distributed systems
 ---
 
