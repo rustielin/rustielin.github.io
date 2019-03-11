@@ -6,7 +6,7 @@ permalink:           pretty
 
 # Setup
 title:               Rustie Lin
-tagline:             UC Berkeley CS, Android, Blockchain
+tagline:             UC Berkeley CS, Distributed Systems, Blockchain
 url:                 https://rustie.xyz
 baseurl:             ''
 paginate:            20
