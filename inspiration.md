@@ -7,6 +7,12 @@ title: Inspiration
   Some stuff to keep me motivated and inspired. Quotes, links, music, other
 </p>
 
+[The Night Watch](https://www.usenix.org/system/files/1311_05-08_mickens.pdf)
+
+* This is actually the funniest thing I've ever read, no lie
+* Ties frustration and humor in systems: something that I'm more than familiar with :^)))
+* TBH the realization that other systems people feel this way is somewhat relieving and hilarious at the same time 
+
 [CAP Twelve Years Later: How the "Rules" Have Changed](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed)
 
 * Still relevant to this day, especially with the CAP theorem being commonly cited in blockchain design.
