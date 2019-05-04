@@ -100,5 +100,4 @@ So, there are often significant difference between the theoretical and purely al
 1. [In Search of an Understandable Consensus ALgorithm (Extended Version)](https://raft.github.io/raft.pdf)
 2. [Agreement in Distributed Systems: Three-phase Commit, Paxos](https://roxanageambasu.github.io/ds-class//assets/lectures/lecture17.pdf)
 3. [Raft.js: Raft Consensus Algorithm in JavaScript](https://github.com/kanaka/raft.js)
-4. [Scalable Consistency ins Scatter](https://homes.cs.washington.edu/~tom/pubs/scatter.pdf)
-5. 
+4. [Scalable Consistency in Scatter](https://homes.cs.washington.edu/~tom/pubs/scatter.pdf)
