@@ -147,6 +147,64 @@ Policy iteration:
 
 ![](../res/img/2019-05-11-14-45-40.png)
 
+## Note 6
+
+We can find any desired probability distribution $P(Q_1 \cdots Q_k \| e_1 \cdots e_k)$ using **inference by enumeration**
+* **Query variables**: unknown and appear on the left side of the distribution
+* **Evidence variables**: observed, whose values appear on the right side of the distribution
+* **Hidden variables**: don't appear in the dist to be calculated, but show up in the overall joint distribution
+
+Bayes nets:
+* DAG that captures relationships between variables
+* Local probability tables and DAG have enough information to compute any probability distribution that could have otherwise been computed from the entire joint distribution
+* Each node represents conditional probability table that is stored, and is conditioned on its parents
+  * *Each node is conditionally independent of all its ancestor nodes in the graph, given all of its parents*
+  
+**Inference**: to calculate the joint PDF for a set of query variables based on some set observed variables. (e.g. goal of Bayes nets really). We can either create and iterate over an exponentially large table (bad) or we can eliminate variables one by one (ok for the most part). 
+
+**Elimination** of variable $X$: 
+1. Join (multiply) all factors involving $X$. Factor is an unnormalized probability, meaning that we need to normalize afterwards
+2. Sum out $X$
+
+Instead of inference, we could also just implicitly calculate the probabilities for our query by counting samples. Naturally, this is called **sampling**. 
+
+**Prior sampling**
+* just keep generating samples until evidence variables are consistent
+* downside is that you have to throw away a lot of samples
+
+**Rejection sampling**
+* just like prior sampling, except as soon as a sample is inconsistent with evidence, throw it out
+
+Prior sampling and rejection sampling both work because valid samples occur with the same probability as specified in the joint PDF. 
+
+**Likelihood weighting**
+* assume we never generate a bad sample
+* manually set all variables equal to the evidence, but weight so that it still follows the joint PDF 
+* this normalizes the probabilities 
+
+![](../res/img/2019-05-11-17-20-18.png)
+
+## Note 8
+
+**Markov models** serve pretty much the same purposes of infinite-length Bayes' nets. We can track the initial distribution at $t=0$ and the transition model that dictates probabilities of state transition between timesteps. The **Markov property**, aka **memoryless property**, means that the state at timestep $i+1$ only relies on the timestep $i$. This can be the case for $i+k$ where $k$ is any positive integer actually, but then we can reduce down to the Markov property. 
+
+Joint distributions in a Markov chain can be calculated using the chain rule and also taking into account the Markov property to eliminate conditional terms. To calculate the distribution on some timestep, we could sum out all variables, but that's pretty inefficient. 
+
+The **min-forward algorithm** can calculate that more efficiently:
+
+![](../res/img/2019-05-11-17-36-40.png)
+
+We can then solve for the stationary distribution if we want by setting the distributions for $t$ equal to that of $t+1$, and solving the resulting system of equations.
+
+**Hidden Markov models** are the same as regular Markov models but have both state variables and evidence variables. Combining the two we can get belief distributions such that $B(W_i) = Pr(W_i\| f_1, \cdots f_i)$ and similarly $B'(W_i) = Pr(W_i\| f_1, \cdots f_{i-1})$, where the difference is that time has not elapsed yet in the second distribution. This is important in the next algorithm: 
+
+The **forward algorithm** is the HMM analog of the mini-forward algorithm:
+
+![](../res/img/2019-05-11-18-03-45.png)
+
+It consists of a **time elapse update**, where we advance time by one timestamp and calculate $B'(W_{i+1})$ from $B(W_i)$ by marginalization, and then incorporate new evidence from that timestep and calculate $B(W_{i+1})$ from $B'(W_{i+1})$ in the **observation update**.
+
+
 
 ## References
 1. Course notes from [CS188 Spring 2019](https://inst.eecs.berkeley.edu/~cs188/sp19/)
