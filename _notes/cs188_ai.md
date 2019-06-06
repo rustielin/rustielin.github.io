@@ -52,7 +52,7 @@ UCS:
 * Use a priority queue on the cost from the start to the new node
 * Complete: if solution exists and *s* is finite
 * Optimal: if all edges are nonnegative
-* Time complexity: if optimal path cost $C^*$ and minimal cost between nodes in the state space graph $\epsilon$, then need to explore all nodes in depths ranging from 1 to $C^*/\epsilon$, so running time complexity of $O(b^{C^*/\epsilon})$
+* Time complexity: if optimal path cost $C^*$ and minimal cost between nodes in the state space graph $\epsilon$, then need to explore  all nodes in depths ranging from 1 to $C^*/\epsilon$, so running time complexity of $O(b^{C^*/\epsilon})$
 * Space complexity: will store nodes at level of cheapest solution:$O(b^{C^*/\epsilon})$
 
 Greedy search:
