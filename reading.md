@@ -7,6 +7,11 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly. Can be books, articles, papers, etc.
 </p>
 
+### Week of 6/24/2019
+
+* [Designing Far Memory Data Structures: Think Outside the Box](https://www.microsoft.com/en-us/research/uploads/prod/2019/05/hotos19-final67.pdf)
+* Merge: The closing between technology and us, Mark Holden
+
 ### Week of 6/17/2019
 
 * [Consistency in Non-Transactional Distributed Storage Systems](https://arxiv.org/pdf/1512.00168.pdf)
@@ -19,7 +24,7 @@ title: Reading List
     * [The Libra Blockchain](https://developers.libra.org/docs/assets/papers/the-libra-blockchain.pdf)
     * [State Machine Replication in the Libra Blockchain](https://developers.libra.org/docs/assets/papers/libra-consensus-state-machine-replication-in-the-libra-blockchain.pdf)
     * [Move: A Language With Programmable Resources](https://developers.libra.org/docs/assets/papers/libra-move-a-language-with-programmable-resources.pdf)
-
+    * [Thoughts on Libra Blockchain](https://medium.com/@lopp/thoughts-on-libra-blockchain-49b8f6c26372)
 * The Tao of Physics, Fritjof Capra
 
 ### Week of 6/10/2019
