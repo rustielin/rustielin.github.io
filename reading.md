@@ -4,8 +4,17 @@ title: Reading List
 ---
 
 <p class="message">
-    What I'm currently reading or learning, assuming I update this regularly. Can be books, articles, papers, etc.
+    What I'm currently reading or learning, assuming I update this regularly. Can be books, articles, papers, etc. If there's duplicate entries across weeks that probably means I'm still working through it or am re-reading it.
 </p>
+
+### Week of 7/1/2019
+
+* [Designing Far Memory Data Structures: Think Outside the Box](https://www.microsoft.com/en-us/research/uploads/prod/2019/05/hotos19-final67.pdf)
+* [Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains](https://arxiv.org/pdf/1801.10228.pdf)
+* [Internet Time Synchronization: The Network Time Protocol](https://pdfs.semanticscholar.org/6bee/f89c6d38aaa26f1ddabfb0ad54d621094d6f.pdf)
+* [NTP Amplification Attack](https://www.cloudflare.com/learning/ddos/ntp-amplification-ddos-attack/)
+* [Eventual Consistency in CouchDB](http://guide.couchdb.org/draft/consistency.html#consistency)
+
 
 ### Week of 6/24/2019
 
