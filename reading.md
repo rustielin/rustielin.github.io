@@ -7,6 +7,17 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly. Can be books, articles, papers, etc. If there's duplicate entries across weeks that probably means I'm still working through it or am re-reading it.
 </p>
 
+### Week of 7/15/2019
+
+* [Flexible Paxos: Quorum Intersection Revisited](https://arxiv.org/pdf/1608.06696v1.pdf)
+* [Gossip and Epidemic Protocols](http://disi.unitn.it/~montreso/ds/papers/montresor17.pdf)
+* [Crisis: Probablistically Self-Organizing Total Order in Unstructured P2P Networks](https://eprint.iacr.org/2019/816.pdf)
+* [Active Pebbles: Parallel Programming for Data-Driven Applications](https://spcl.inf.ethz.ch/Publications/.pdf/active_pebbles.pdf)
+
+### Week of 7/8/2019
+
+* [Active Messages: a Mechanism for Integrated Communication and Computation](http://people.cs.uchicago.edu/~ftchong/290N-W12/isca92.pdf)
+
 ### Week of 7/1/2019
 
 * [Designing Far Memory Data Structures: Think Outside the Box](https://www.microsoft.com/en-us/research/uploads/prod/2019/05/hotos19-final67.pdf)
