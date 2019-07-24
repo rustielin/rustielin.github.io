@@ -7,6 +7,10 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly. Can be books, articles, papers, etc. If there's duplicate entries across weeks that probably means I'm still working through it or am re-reading it.
 </p>
 
+### Week of 7/22/2019
+
+* [A Byzantine Fault-Tolerant Ordering Service for the Hyperledger Fabric Blockchain Platform](http://www.di.fc.ul.pt/~bessani/publications/dsn18-hlfsmart.pdf)
+
 ### Week of 7/15/2019
 
 * [Flexible Paxos: Quorum Intersection Revisited](https://arxiv.org/pdf/1608.06696v1.pdf)
