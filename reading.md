@@ -10,6 +10,7 @@ title: Reading List
 ### Week of 7/22/2019
 
 * [A Byzantine Fault-Tolerant Ordering Service for the Hyperledger Fabric Blockchain Platform](http://www.di.fc.ul.pt/~bessani/publications/dsn18-hlfsmart.pdf)
+* [Performance Benchmarking and Optimizing Hyperledger Fabric Blockchain Platform](https://arxiv.org/pdf/1805.11390.pdf)
 
 ### Week of 7/15/2019
 
