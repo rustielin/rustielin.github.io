@@ -10,6 +10,9 @@ title: Reading List
 ### Week of 7/29/2019
 
 * [There Is More Consensus in Egalitarian Parliaments](https://www.cs.cmu.edu/~dga/papers/epaxos-sosp2013.pdf)
+* [Vive La Difference: Paxos vs. Viewstamped Replication vs. Zab](https://www.cs.cornell.edu/fbs/publications/viveLaDifference.pdf)
+* [The ABCD's of Paxos](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.595.4829&rep=rep1&type=pdf)
+* [ZooKeeper Internals](https://zookeeper.apache.org/doc/r3.4.13/zookeeperInternals.html)
 
 ### Week of 7/22/2019
 
