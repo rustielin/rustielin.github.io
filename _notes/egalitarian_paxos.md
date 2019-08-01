@@ -4,7 +4,10 @@ title: Egalitarian Paxos
 category: distributed systems
 ---
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSgJTl82wQCe_sjea_QTPREjJZJ0IscEl9a41-cRlxOwa8ASqhB6Vohtm9SsLYF_eaLSjJeBVCZcFXS/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSgJTl82wQCe_sjea_QTPREjJZJ0IscEl9a41-cRlxOwa8ASqhB6Vohtm9SsLYF_eaLSjJeBVCZcFXS/embed?start=false&loop=false&delayms=3000" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"
+    allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
 
 ## Why Paxos?
 
@@ -30,11 +33,11 @@ In **Multi-Paxos**, **Generalized Paxos**, and  **Fast Paxos**, one replica is e
 
 In **Mencius Paxos**, each replica proceeds to append to the transaction log in round-robin fashion, thereby effectively load balancing. However, it will run at the speed of the slowest replica, since all replicas take turns at proposing. 
 
-![](../res/img/2019-07-28-22-13-22.png)
+![](../res/img/2019-07-28-22-13-22.png){: .center-image }
 
 In **Egalitarian Paxos**, we remove the notion of slot contention, and make it such that each replica has its own row of slots, as in the image below. 
 
-![](../res/img/2019-07-28-22-17-21.png)
+![](../res/img/2019-07-28-22-17-21.png){: .center-image }
 
 The red arrows represent constraints on the operations, which are explicitly defined. After committing at each replica, consensus is reached that `A <- B <- C <- D`
 
@@ -46,7 +49,7 @@ This process requires 2 RTT, which is where we started from. As an optimization,
 
 Constraints can be drawn as a directed graph, and an order can be written by linearizing the graph's strongly connected components. When there are cycles, we execute operations in each strongly component by order of their sequence numbers e.g. approximating a Lamport Clock.
 
-![](../res/img/2019-07-31-20-02-02.png)
+![](../res/img/2019-07-31-20-02-02.png){: .center-image }
 
 Note: similar concept to the universal tiebreaker in Lamport's Time, Clocks paper in establishing a total ordering of events in a distrubted system.
 
