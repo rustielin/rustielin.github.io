@@ -7,6 +7,10 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly. Can be books, articles, papers, etc. If there's duplicate entries across weeks that probably means I'm still working through it or am re-reading it.
 </p>
 
+### Week of 8/19/2019
+
+* [A Cloud Robot System Accessing Learned Grasps from Dexterity Network 1.0 and Berkeley Robotics and Automation as a Service (Brass)](https://goldberg.berkeley.edu/pubs/Nan-Cloud-Robotics-ICRA-2017-submitted.pdf)
+
 ### Week of 7/29/2019
 
 * [There Is More Consensus in Egalitarian Parliaments](https://www.cs.cmu.edu/~dga/papers/epaxos-sosp2013.pdf)

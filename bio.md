@@ -9,7 +9,7 @@ A collection of bios of varying lengths, focuses, and styles. Keeping them here 
 
 ## Blockchain, < 150 words, 3rd person
 
-Rustie currently leads the Education Department and is most well known for spearheading the BerkeleyX Blockchain Fundamentals Professional Certificate MOOC program on edX, reaching 85,000 students from 192 countries around the world. He has also lectured for the Blockchain Fundamentals course offered on UC Berkeley campus, as well as delivered technical talks and workshops internationally. Prior to finding his calling in education, Rustie also helped to develop blockchain PoCs on Ethereum for startups and Fortune 500 companies. Rustie is currently studying classical consensus mechanisms and distributed hash tables for internal research projects. Rustie’s primary interests are in distributed and parallel computing, especially in the design of blockchains, multi cloud, and other big networked systems. You can find more about Rustie on his personal website: [rustie.xyz](https://rustie.xyz).
+Rustie currently leads the Education Department and is most well known for spearheading the BerkeleyX Blockchain Fundamentals Professional Certificate MOOC program on edX, reaching 98,000 students from 192 countries around the world. He has also lectured for the Blockchain Fundamentals course offered on UC Berkeley campus, as well as delivered technical talks and workshops internationally. Prior to finding his calling in education, Rustie also helped to develop blockchain PoCs on Ethereum for startups and Fortune 500 companies. Rustie is currently studying classical consensus mechanisms and distributed hash tables for internal research projects. Rustie’s primary interests are in distributed and parallel computing, especially in the design of blockchains, multi cloud, and other big networked systems. You can find more about Rustie on his personal website: [rustie.xyz](https://rustie.xyz).
 
 ## Parallel Computing Research, < 150 words, 3rd person
 
@@ -21,7 +21,7 @@ Rustie is a third year undergraduate at UC Berkeley with extensive experience in
 
 ## General, 4-6 sentences, 3rd person
 
-Rustie is a third year undergraduate at UC Berkeley whose primary interests are in distributed systems and networks, particularly multi-cloud, blockchains, and alternative internet architectures. He feels strongly about science communication, accessible education, and community building. Rustie teaches UC Berkeley's undergraduate course on blockchain both on campus and online, with a total of 88,000 students worldwide. Outside of school and work, Rustie is an amateur cook, aspiring coffee connoisseur, self-help nerd, and occasional mountain and seaside explorer. He looks forward to spending the summer with the beautiful people at the 'Disco!
+Rustie is a third year undergraduate at UC Berkeley whose primary interests are in distributed systems and networks, particularly multi-cloud, blockchains, and alternative internet architectures. He feels strongly about science communication, accessible education, and community building. Rustie teaches UC Berkeley's undergraduate course on blockchain both on campus and online, with a total of 88,000 students worldwide. Outside of school and work, Rustie is an amateur cook, aspiring coffee connoisseur, self-help nerd, and occasional mountain and seaside explorer. 
 
 <!-- ## Blockchain, < 150 words, 1st person
 
