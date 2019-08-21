@@ -10,6 +10,7 @@ title: Reading List
 ### Week of 8/19/2019
 
 * [A Cloud Robot System Accessing Learned Grasps from Dexterity Network 1.0 and Berkeley Robotics and Automation as a Service (Brass)](https://goldberg.berkeley.edu/pubs/Nan-Cloud-Robotics-ICRA-2017-submitted.pdf)
+* [Analysis of the XRP Ledger Consensus Protocol](https://arxiv.org/pdf/1802.07242.pdf)
 
 ### Week of 7/29/2019
 
