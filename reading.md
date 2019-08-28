@@ -10,6 +10,7 @@ title: Reading List
 ### Week of 8/26/2019
 * [A Case for the Universal DataPlane](https://ptolemy.berkeley.edu/projects/terraswarm/pubs/116/kubitowicz_udplane_edge.pdf)
 * [Towards a Global Data Infrastructure](https://ptolemy.berkeley.edu/projects/chess/pubs/1172/MorEtAl_GlobalData_1_.pdf)
+* [Fog Computing and Its Role in the Internet of Things](https://conferences.sigcomm.org/sigcomm/2012/paper/mcc/p13.pdf)
 
 ### Week of 8/19/2019
 
