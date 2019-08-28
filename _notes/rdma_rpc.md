@@ -60,6 +60,35 @@ BCL distributed data structures
 
 GASNet active messages
 
+### Component Observations
+
+* Put fastest
+* Get, FAD, Single CAS next 
+* Persistent CAS more expensive than Single CAS since need multiple round-trips to succeed in swapping target value
+* Single FAD more expensive than FAD, due to strange transient issue only on Cori (with Cray Aries NIC)
+  * Surprising because NIC-accelerated FADs not supposed to be affected by choice of target address 
+  * Should only happen at lower level and also in shared memory environment (e.g. directory or snooping protocol for cache coherence)
+
+![](../res/img/2019-08-28-16-15-22.png){: .center-image}
+
+### Queue Observations
+
+* Consistent with Single FAD
+* RDMA Push $C_{WR}$ has performance hit during second AMO, which needs more round trip attempts than Persistent CAS benchmark would suggest 
+  * Multiplier on this for number of attempts
+  * Due to inherent serialization since Push can only go through after all other insertions have finished writing, via advancing `tail_ready` pointer
+
+![](../res/img/2019-08-28-16-14-58.png){: .center-image}
+
+### Attentiveness Observations
+
+* Only considered perfect active message attentiveness (e.g. progress thread)
+* AM faster than RDMA until computation time exceeded 2 microseconds
+  * Question: relation between expressivity and computation time? 
+* RDMA latency goes down as computation time increases, since quieter network spaced across more computation
+
+![](../res/img/2019-08-28-16-14-31.png){: .center-image }
+
 ## Thoughts
 
 This is somewhat like recursive vs iterative lookups (e.g. for DNS) from the perspective of the client. Recursive lookups are a single round trip for a client, who issues the first request which then gets propagated by other components which are "smart". Iterative lookups require potentially many more round trips for the client, but each component that receives the request can be "dumb" and only support messages signaling having data, not having data, or knowing a hint as to where the data might be. 
