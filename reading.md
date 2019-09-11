@@ -7,7 +7,12 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly. Can be books, articles, papers, etc. If there's duplicate entries across weeks that probably means I'm still working through it or am re-reading it.
 </p>
 
+## Week of 9/9/2019
+
+* [Nano: A Feeless Distributed Cryptocurrency Network](https://nano.org/en/whitepaper)
+
 ### Week of 8/26/2019
+
 * [A Case for the Universal DataPlane](https://ptolemy.berkeley.edu/projects/terraswarm/pubs/116/kubitowicz_udplane_edge.pdf)
 * [Towards a Global Data Infrastructure](https://ptolemy.berkeley.edu/projects/chess/pubs/1172/MorEtAl_GlobalData_1_.pdf)
 * [Fog Computing and Its Role in the Internet of Things](https://conferences.sigcomm.org/sigcomm/2012/paper/mcc/p13.pdf)
