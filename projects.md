@@ -9,9 +9,24 @@ title: Projects
 
 </p>
 
+### Decentralized Index of Knowledge
+* Live demo [here](https://index-of-knowledge.appspot.com/)
+* Google Docs plugin for easy administration
+* Potential IPFS plugin
+* Fun cytoscapeJS and networkx visualizations
+* Github authentication for automating PRs
+
+### Data Donation Market
+* Hack Davis 2020 Winner, Most Technical Project
+* Revokable data streaming and payments
+* Included hardware component for collecting motion data
+* Definitely the most "hacky" project I've ever made. Also built with Blockstack before finding out that they had pulled out as sponsors (voiding the prize category :(...)
+* Built with **GCP**, **Node**, **Express**, **ILP**, **Blockstack**, **MongoDB**
+  
+
 ### DEEPsus
 * [Davis Environmental and Energy Platform for Sustainability](https://devpost.com/software/deepsus)
-* Hack Davis 2019 1st Place Best Use of OSIsoft Data
+* Hack Davis 2019 Winner, 1st Place Best Use of OSIsoft Data
 * Real time data analytics from OSI PI system on UC Davis campus
 * Explatory data analysis of historical OSIsoft data (esp chilled water trends)
 * Designed scalable data ingestion pipeline on Google Cloud Platform
