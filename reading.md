@@ -7,6 +7,10 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly. Can be books, articles, papers, etc. If there's duplicate entries across weeks that probably means I'm still working through it or am re-reading it.
 </p>
 
+## Week of 1/27/2020
+
+* Last of Her Name, Mimi Lok
+
 ## Week of 9/9/2019
 
 * [Nano: A Feeless Distributed Cryptocurrency Network](https://nano.org/en/whitepaper)

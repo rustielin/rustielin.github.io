@@ -7,7 +7,18 @@ title: Blockchain Education
   A repository of some of my favorite blockchain education resources made by me and others. Some resources not necessarily blockchain focused, but are good for general education/context.
 </p>
 
-## Courses & Slides
+## Blockchain Fundamentals
+
+Blockchain at Berkeley fundamental curriculum. In development since Fall 2016, iterating ever since. I've had the privilege of teaching it to students, other educators, and just about anyone you can imagine. 
+
+### Features
+
+* [edX](https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals)
+* [Berkeley News](http://news.berkeley.edu/2018/06/14/)new-uc-berkeley-online-course-will-make-blockchain-so-clear-you-can-explain-it-to-your-grandma/)
+* [Computerworld](https://www.computerworld.com/article/3282791/blockchain/)uc-berkeley-puts-blockchain-training-online-thousands-sign-up.html)
+* [Daily Cal](http://www.dailycal.org/2018/06/19/uc-berkeleys-blockchain-fundamentals-decal-offered-edx/)
+
+### Courses & Slides
 
 [CS198.1x Bitcoin and Cryptocurrencies](https://www.edx.org/course/bitcoin-and-cryptocurrencies)
 * [Bitcoin Protocol & Consensus: A High Level Overview](https://drive.google.com/open?id=1Jt4uXBs-U5ESEgfXQfZnw24UxSJD5JBP)
@@ -25,11 +36,14 @@ title: Blockchain Education
 * [The Fight for Privacy: Anonymity, Mixing & Altcoins](https://drive.google.com/open?id=1hVbX0yj_u_E11Q9SsfM4MCjgbdO1_r1Q)
 * [A Blockchain Powered Future: Program Conclusion](https://drive.google.com/open?id=1mxzNCSxjW6QdfLT7nCSmTQ7IpAZOxzm8)
 
+## Misc 
+
 [Blockchain for Developers](https://learnblockcha.in)  
 
 [DRAFT: Introduction to Cryptocurrencies and Blockchain: A High Level Overview](https://github.com/rustielin/Blockchain-Notes/blob/master/archive/blockchain_textbook_draft_updated.pdf)
 * Fun fact: Blockchain Fundamentals was previously known as the Cryptocurrency DeCal, hence the title above
 * My attempt at turning my notes into a "textbook", probably staying a draft forever
+* Edit (Fall 2019): new B@B members taking on textbook writing from a non-technical perspective. Launch soon!
 
 ## Papers
 * [MetaAnalysis of Alternative Consensus Protocols](https://github.com/Mechanism-Labs/MetaAnalysis-of-Alternative-Consensus-Protocols)
