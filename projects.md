@@ -13,8 +13,14 @@ title: Projects
 * Live demo [here](https://index-of-knowledge.firebaseapp.com/?loaduser=rustielin.id.blockstack&guest=true)
 * Google Docs plugin for easy administration
 * Interface with Blockstack for distributed storage
-* Fun cytoscapeJS and networkx visualizations
+* Interactive cytoscapeJS and networkx visualizations
+* Travis CI for automated build and linearization of IoK into awesome-list
 * Github authentication for automating PRs
+
+### Cadence -- Chrome new-tab markdown editor
+* Live on Chrome extension store [here](https://chrome.google.com/webstore/detail/cadence-take-note-and-mov/fimanhhfeancbefokdgeoljcdfhlmake/)
+* Fetch background images by user-provided query strings
+* Persistence of user settings through various instances
 
 ### Data Donation Market
 * Hack Davis 2020 Winner, Most Technical Project
