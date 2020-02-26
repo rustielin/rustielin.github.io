@@ -10,9 +10,9 @@ title: Projects
 </p>
 
 ### Decentralized Index of Knowledge
-* Live demo [here](https://index-of-knowledge.appspot.com/)
+* Live demo [here](https://index-of-knowledge.firebaseapp.com/?loaduser=rustielin.id.blockstack&guest=true)
 * Google Docs plugin for easy administration
-* Potential IPFS plugin
+* Interface with Blockstack for distributed storage
 * Fun cytoscapeJS and networkx visualizations
 * Github authentication for automating PRs
 
