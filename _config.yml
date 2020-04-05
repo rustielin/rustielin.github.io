@@ -18,7 +18,7 @@ email:               rustielin@berkeley.edu
 github:              https://github.com/rustielin
 
 # Custom vars
-version:             1.0.0
+version:             1.1.0
 categorylist:          [distributed systems, blockchain, algorithms, database]
 collections:
     notes:

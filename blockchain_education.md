@@ -4,21 +4,21 @@ title: Blockchain Education
 ---
 
 <p class="message">
-  A repository of some of my favorite blockchain education resources made by me and others. Some resources not necessarily blockchain focused, but are good for general education/context.
+  A repository of some of the blockchain education resources we made during my time at Blockchain at Berkeley.
 </p>
 
 ## Blockchain Fundamentals
 
-Blockchain at Berkeley fundamental curriculum. In development since Fall 2016, iterating ever since. I've had the privilege of teaching it to students, other educators, and just about anyone you can imagine. 
+I had the pleasure of contributing mainly to Blockchain at Berkeley's fundamental curriculum, taught by students for other students, faculty, and anyone of any background. It's been in development since Fall 2016, and iterating ever since.
 
 ### Features
 
 * [edX](https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals)
-* [Berkeley News](http://news.berkeley.edu/2018/06/14/)new-uc-berkeley-online-course-will-make-blockchain-so-clear-you-can-explain-it-to-your-grandma/)
-* [Computerworld](https://www.computerworld.com/article/3282791/blockchain/)uc-berkeley-puts-blockchain-training-online-thousands-sign-up.html)
+* [Berkeley News](http://news.berkeley.edu/2018/06/14/new-uc-berkeley-online-course-will-make-blockchain-so-clear-you-can-explain-it-to-your-grandma/)
+* [Computerworld](https://www.computerworld.com/article/3282791/blockchain/uc-berkeley-puts-blockchain-training-online-thousands-sign-up.html)
 * [Daily Cal](http://www.dailycal.org/2018/06/19/uc-berkeleys-blockchain-fundamentals-decal-offered-edx/)
 
-### Courses & Slides
+### Course materials
 
 [CS198.1x Bitcoin and Cryptocurrencies](https://www.edx.org/course/bitcoin-and-cryptocurrencies)
 * [Bitcoin Protocol & Consensus: A High Level Overview](https://drive.google.com/open?id=1Jt4uXBs-U5ESEgfXQfZnw24UxSJD5JBP)
@@ -36,29 +36,13 @@ Blockchain at Berkeley fundamental curriculum. In development since Fall 2016, i
 * [The Fight for Privacy: Anonymity, Mixing & Altcoins](https://drive.google.com/open?id=1hVbX0yj_u_E11Q9SsfM4MCjgbdO1_r1Q)
 * [A Blockchain Powered Future: Program Conclusion](https://drive.google.com/open?id=1mxzNCSxjW6QdfLT7nCSmTQ7IpAZOxzm8)
 
-## Misc 
+Miscellaneous
+* [Blockchain for Developers](https://learnblockcha.in)  
+* [DRAFT: Introduction to Cryptocurrencies and Blockchain](https://github.com/rustielin/Blockchain-Notes/blob/master/archive/blockchain_textbook_draft_updated.pdf)
 
-[Blockchain for Developers](https://learnblockcha.in)  
-
-[DRAFT: Introduction to Cryptocurrencies and Blockchain: A High Level Overview](https://github.com/rustielin/Blockchain-Notes/blob/master/archive/blockchain_textbook_draft_updated.pdf)
-* Fun fact: Blockchain Fundamentals was previously known as the Cryptocurrency DeCal, hence the title above
-* My attempt at turning my notes into a "textbook", probably staying a draft forever
-* Edit (Fall 2019): new B@B members taking on textbook writing from a non-technical perspective. Launch soon!
-
-## Papers
-* [MetaAnalysis of Alternative Consensus Protocols](https://github.com/Mechanism-Labs/MetaAnalysis-of-Alternative-Consensus-Protocols)
-* [In Search of an Understandable Consensus Algorithm (Extended Version)](https://raft.github.io/raft.pdf)
-* [The Hitchhiker’s Guide to Blockchains: A Trust Based Taxonomy](https://wandisco.com/assets/whitepapers/the-hitchhikers-guide-to-blockchains.pdf)
-* [Majority is not Enough: Bitcoin Mining is Vulnerable](https://arxiv.org/pdf/1311.0243.pdf)
-* [Zerocash: Decentralized Anonymous Payments from Bitcoin](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6956581)
-* [Tendermint: Byzantine Fault Tolerance in the Age of Blockchains](https://allquantor.at/blockchainbib/pdf/buchman2016tendermint.pdf)
-* [Cosmos: A Network of Distributed Ledgers](https://cosmos.network/resources/whitepaper)
-* [The Part-Time Parliament](https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf)
 
 ## Selected Lecture Videos
 
 <iframe style="text-align: center" width="560" height="315" src="https://www.youtube.com/embed/6yFtb-c99LM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm5LAxKxrD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3wUp5V-4s8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Kwf_noxhw1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6prTenv1-tw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
