@@ -1,56 +1,55 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>Check out my works below:</p>
-  </div>
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.url }}">
+          {{ site.title_short }}
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+    
+    <nav class="sidebar-nav">
 
-  <!-- <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a> -->
+      <a class="sidebar-nav-item" href="{{site.baseurl}}/blog">Blog</a>
+      <a class="sidebar-nav-item" href="{{site.baseurl}}/notes">Notes</a>
+      <a class="sidebar-nav-item" href="https://drive.google.com/file/d/0B46VW36KYd_NcDZUbmJEVWFmRm8/view?usp=sharing">Resume</a>
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
 
-
-  <a class="sidebar-nav-item" href="{{site.baseurl}}/blog">Blog</a>
-  <a class="sidebar-nav-item" href="{{site.baseurl}}/notes">Notes</a>
-  <a class="sidebar-nav-item" href="https://drive.google.com/file/d/0B46VW36KYd_NcDZUbmJEVWFmRm8/view?usp=sharing">Resume</a>
-  
-  <nav class="sidebar-nav">
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
-
-    {% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+      {% assign pages_list = site.pages | sort:"url" %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
         {% endif %}
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
 
-  </nav>
+    </nav>
 
-  <div class="sidebar-item">
+    <div class="sidebar-item">
 
-    <h4 style="color: white">Contact</h4>
-    Email: <a href="mailto:rustielin@berkeley.edu">rustielin@berkeley.edu</a> <br>
+      <p class="lead">Contact</p>
+      Email: <a href="mailto:rustielin@berkeley.edu">rustielin@berkeley.edu</a> <br>
+      GitHub: <a href="https://github.com/rustielin">rustielin</a> <br>
+      LinkedIn: <a href="https://www.linkedin.com/in/rustielin/">rustielin</a> <br>
 
-    GitHub: <a href="https://github.com/rustielin">rustielin</a> <br>
-    LinkedIn: <a href="https://www.linkedin.com/in/rustielin/">rustielin</a> <br>
+    </div>
+
+    <div class="sidebar-item">
+
+
+      <p>Currently v{{ site.version }}</p>
+
+      <p>
+        &copy; {{ site.time | date: '%Y' }}. Rustie Lin.
+      </p>
+    </div>
+
 
   </div>
-
-  <div class="sidebar-item">
-
-
-    <p>v{{ site.version }}, powered by Jekyll</p>
-
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. Rustie Lin.
-    </p>
-  </div>
-
-
 </div>

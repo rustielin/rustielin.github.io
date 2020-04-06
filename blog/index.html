@@ -14,10 +14,8 @@ layout: default
   <article class="post">
 
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-    <i> {{ post.date | date_to_string }}</i>
-    <div class="entry">
-      {{ post.headline | truncatewords:40}}
-    </div>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    {{ post.content }}
 
   </article>
 

@@ -6,10 +6,12 @@ permalink:           pretty
 
 # Setup
 title:               Rustie Lin
+title_short:         Rustie
 tagline:             Production Engineer, Distributed Systems, Blockchain
+description:         'Nope, not rusty'
 url:                 https://rustie.xyz
 baseurl:             ''
-paginate:            20
+paginate:            5
 paginate_path:       "/blog/page:num/"
 
 # About/contact
@@ -18,7 +20,7 @@ email:               rustielin@berkeley.edu
 github:              https://github.com/rustielin
 
 # Custom vars
-version:             1.1.0
+version:             2.1.0
 categorylist:          [distributed systems, blockchain, algorithms, database]
 collections:
     notes:
