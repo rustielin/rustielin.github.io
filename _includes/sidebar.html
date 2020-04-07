@@ -1,13 +1,13 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="container sidebar-sticky-top">
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.url }}">
           {{ site.title_short }}
         </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
+      <p class="lead">{{ site.tagline }}</p>
     </div>
     
     <nav class="sidebar-nav">
@@ -30,7 +30,9 @@
       {% endfor %}
 
     </nav>
+  </div>
 
+  <div class="container sidebar-sticky-bottom">
     <div class="sidebar-item">
 
       <p class="lead">Contact</p>
@@ -49,7 +51,6 @@
         &copy; {{ site.time | date: '%Y' }}. Rustie Lin.
       </p>
     </div>
-
-
   </div>
+
 </div>
