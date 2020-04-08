@@ -111,6 +111,7 @@
        right:  1rem;
        top:    1rem;
        left:   1rem;
+       background-color: #393939;
      }
    }
 
@@ -120,6 +121,7 @@
       right:  1rem;
       bottom: 1rem;
       left:   1rem;
+      z-index: -1;
     }
   }
 
