@@ -4,12 +4,13 @@ title: Reading List
 ---
 
 <p class="message">
-    What I'm currently reading or learning, assuming I update this regularly. Can be books, articles, papers, etc. If there's duplicate entries across weeks that probably means I'm still working through it or am re-reading it.
+    What I'm currently reading or learning, assuming I update this regularly.
 </p>
 
 ## Week of 4/19/2020
 
-* Small Great THings, Jodi Picoult
+* [Twins: White-Glove Approach for BFT Testing](https://arxiv.org/pdf/2004.10617.pdf)
+* Small Great Things, Jodi Picoult
 
 ## Week of 4/5/2020
 
