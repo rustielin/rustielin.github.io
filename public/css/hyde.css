@@ -32,7 +32,7 @@
  */
 
  html {
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   @media (min-width: 48em) {
     html {
@@ -79,7 +79,7 @@
   .sidebar-about h1 {
     color: #fff;
     margin-top: 0;
-    font-family: "Raleway", serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 3.25rem;
   }
   
@@ -259,4 +259,13 @@
   .theme-base-0f .content a,
   .theme-base-0f .related-posts li a:hover {
     color: #8f5536;
+  }
+
+  /* my theme */
+  .theme-base-me .sidebar {
+    background-color: #666666ff;
+  }
+  .theme-base-0e .content a,
+  .theme-base-0e .related-posts li a:hover {
+    color: #8e7cc3;
   }
