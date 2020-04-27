@@ -7,24 +7,24 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly.
 </p>
 
-## Week of 4/19/2020
+### Week of 4/19/2020
 
 * [Twins: White-Glove Approach for BFT Testing](https://arxiv.org/pdf/2004.10617.pdf)
 * Small Great Things, Jodi Picoult
 
-## Week of 4/5/2020
+### Week of 4/5/2020
 
 * How Starbucks Saved My Life, Michael Gates Gill
 
-## Week of 2/23/2020
+### Week of 2/23/2020
 
 * Rethinking Consciousness, Michael S. A. Graziano
 
-## Week of 1/27/2020
+### Week of 1/27/2020
 
 * Last of Her Name, Mimi Lok
 
-## Week of 9/9/2019
+### Week of 9/9/2019
 
 * [Nano: A Feeless Distributed Cryptocurrency Network](https://nano.org/en/whitepaper)
 
