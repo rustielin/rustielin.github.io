@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: post
 title: The Big Picture
-category: distributed systems
+headline: Lamport implies various times in his Turing Award paper "The Computer Science of Concurrency The Early Years" that there's a huge gap between engineering solutions to concurrency issues and the study of concurrency in computer science.
 ---
 
 I've been stuck in the weeds recently learning all these specific technologies, and while there's merit in that, sometimes I need to take a breather and explore the big picture. Everything needs a clear direction and in that sense the big picture of systems and the applications and workloads they support is this guiding north star. 

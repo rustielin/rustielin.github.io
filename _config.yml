@@ -20,7 +20,7 @@ github:              https://github.com/rustielin
 
 # Custom vars
 version:             2.1.0
-categorylist:          [distributed systems, blockchain, algorithms, database]
+categorylist:          [distributed systems, blockchain, algorithms]
 collections:
     notes:
         collections_dir: notes
