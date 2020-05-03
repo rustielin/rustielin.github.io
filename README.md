@@ -1,1 +1,1 @@
-Personal website/portfolio at [rustie.xyz](rustie.xyz)
+Personal website/portfolio at [rustie.xyz](https://rustie.xyz)
