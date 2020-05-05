@@ -7,6 +7,11 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly.
 </p>
 
+### Week of 5/3/2020
+
+* [On Computable Numbers, with an Application to the Entscheidungsproblem](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf)
+* Writing My Wrongs: Life, Death, and Redemption in an American Prison, Shaka Senghor
+
 ### Week of 4/19/2020
 
 * [Twins: White-Glove Approach for BFT Testing](https://arxiv.org/pdf/2004.10617.pdf)
