@@ -7,6 +7,15 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly.
 </p>
 
+### Week of 5/24/2020
+
+* Transcending: Trans Buddhist Voices, Kevin Manders and Elizabeth Marston
+* [Cypherpunk Women](https://citapress.org/#books/cypherpunk-women), Leigh Cuen
+
+### Week of 5/17/2020
+
+* [Go To Statement Considered Harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html)
+
 ### Week of 5/3/2020
 
 * [On Computable Numbers, with an Application to the Entscheidungsproblem](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf)
