@@ -7,6 +7,11 @@ title: Reading List
     What I'm currently reading or learning, assuming I update this regularly.
 </p>
 
+
+### Week of 6/28/2020
+
+* The Boys in the Boat, Daniel James Brown
+
 ### Week of 5/24/2020
 
 * Transcending: Trans Buddhist Voices, Kevin Manders and Elizabeth Marston
