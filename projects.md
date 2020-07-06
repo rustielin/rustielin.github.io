@@ -10,12 +10,11 @@ title: Projects
 </p>
 
 ### Decentralized Index of Knowledge
-* Live demo [here](https://index-of-knowledge.firebaseapp.com/?loaduser=rustielin.id.blockstack&guest=true)
-* Google Docs plugin for easy administration
-* Interface with Blockstack for distributed storage
-* Interactive cytoscapeJS and networkx visualizations
+* Live demo [here](https://index-of-knowledge.web.app/ipfs?hash=bafyreicuan6hdr7jaz5e7pdevsjqjtviigil5achefs6lcwdaah5zc57le)
+* Distributed storage with Blockstack and IPFS
+* Interactive cytoscapeJS graph visualization
 * Travis CI for automated build and linearization of IoK into awesome-list
-* Github authentication for automating PRs
+* Verifiable traversals of IoK subgraphs
 
 ### Cadence -- Chrome new-tab markdown editor
 * Live on Chrome extension store [here](https://chrome.google.com/webstore/detail/cadence-take-note-and-mov/fimanhhfeancbefokdgeoljcdfhlmake/)
